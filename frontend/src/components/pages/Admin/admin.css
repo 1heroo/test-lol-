@@ -1,0 +1,221 @@
+.admin{
+    padding: 40px 0 40px;
+}
+
+.admin__tabs{
+    display: none;
+}
+.admin__tabs_active{
+    display: block;
+}
+
+.admin__title{
+    font-family: 'Gotham', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 35px;
+    line-height: 40px;
+    color: #1E005A;
+}
+
+.delete__btn{
+    padding: 5px 5px 5px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.admin__top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.admin__buttons{
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.admin__btn{
+    width: 150px;
+    height: 42px;
+    cursor: pointer;
+    background: #1E005A;
+    color: #ffffff;
+    font-size: 17px;
+    border: none;
+}
+.admin__btn_active{
+    background: #FE0000;
+    width: 150px;
+    height: 42px;
+    color: #ffffff;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.admin__h2{
+    font-family: 'Gotham', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 40px;
+    color: #1E005A;
+    margin: 65px 0 30px;
+}
+
+.admin__row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid #1E005A;
+    padding: 10px 30px 30px;
+    margin-bottom: 20px;
+}
+
+.admin__content{
+    width: 400px;
+    margin: 0 auto;
+    padding: 30px;
+    border: 1px solid #1E005A;
+    box-sizing: border-box;
+    border-radius: 12px;
+    margin-top: 30px;
+}
+
+
+.admin__change{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.admin__info{
+    column-gap: 32px;
+}
+
+.admin__info-save{
+    border-radius: 6px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+    width: 246px;
+    height: 48px;
+    border: none;
+    background: #1E005A;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.admin__content-title{
+    font-family: 'Gotham', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+      font-size: 24px;
+      line-height: 32px;
+      display: flex;
+      align-items: center;
+      color: #1E005A;
+}
+.admin__content-write{
+    font-family: 'Gotham', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FE0000;
+    column-gap: 17px;
+    cursor: pointer;
+}
+
+.admin__info-about{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    display: flex;
+    color: #191919;
+    flex-direction: column;
+    row-gap: 5px;
+}
+.admin__info-upper{
+    font-family: 'Gotham', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #FE0000;
+}
+.admin__info-input{
+    background: #FFFFFF;
+    border: 1px solid #FE0000;
+    box-sizing: border-box;
+    border-radius: 6px;
+    width: 246px;
+    height: 48px;
+    padding-left: 16px;
+    outline: none;
+}
+
+.admin__out{
+    font-family: 'Gotham', sans-serif;
+    font-style: normal;
+    text-transform: uppercase;
+    color: #FE0000;
+    font-size: 20px;
+}
+
+@media (max-width: 992px) {
+    .admin__content{
+        width: 100%;
+    }
+    .admin__info{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 576px) {
+    .profile__orders-item {
+        flex-direction: column;
+    }
+    .admin__top {
+        gap: 15px;
+        flex-flow: column;
+    }
+    .admin__title {
+        font-size: 27px;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .admin__row {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .admin__delete{
+        font-size: 25px;
+        background: #FE0000;
+        color: #ffffff;
+        width: 150px;
+        height: 40px;
+        border: none;
+        cursor: pointer;
+        border-radius: 12px;
+    }
+}
+
+.delete__img__btn{
+    font-size: 25px;
+    border: none;
+    cursor: pointer;
+    width: 55px;
+}

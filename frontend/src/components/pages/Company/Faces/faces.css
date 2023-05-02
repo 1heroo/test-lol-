@@ -1,0 +1,61 @@
+.faces{
+    padding: 70px 0 58px;
+}
+
+.faces__block{
+    display: flex;
+    column-gap: 32px;
+    align-items: center;
+}
+
+.faces__bgr{
+    width: 100%;
+    margin-bottom: 127px;
+}
+
+.faces__img{
+    width: 100%;
+    height: 100%;
+}
+
+.faces__title{
+    font-family: 'Gotham', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    color: #1E005A;
+}
+
+.faces__h2{
+    font-family: 'Gotham', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 32px;
+    color: #1E005A;
+    margin: 16px 0 20px;
+}
+
+
+.faces__text{
+    font-family: 'Gotham', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #1E005A;
+}
+
+.faces__card{
+    margin-top: 20px;
+    text-align: center;
+}
+
+@media (max-width: 400px) {
+    .faces__bgr {
+        width: 100%;
+        height: 300px;
+        margin-bottom: 37px;
+    }
+}

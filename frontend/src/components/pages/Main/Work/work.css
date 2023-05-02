@@ -1,0 +1,130 @@
+.work{
+    padding: 15px 0 15px;
+    background: #1E005A;
+}
+
+.work__content{
+    text-align: center;
+}
+
+.work__image{
+    width: 100%;
+    height: 100%;
+}
+
+.work__title{
+    font-family: 'Gotham', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 40px;
+    color: #ffffff;
+    margin-bottom: 14px;
+}
+
+.work__list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 17px;
+    column-gap: 50px;
+}
+.work__item{
+    display: flex;
+    column-gap: 12px;
+    align-items: center;
+    font-family: 'Gotham', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 40px;
+    color: #ffffff;
+}
+
+.work__line{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: #FE0000;
+}
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 900px) {
+    .work__list {
+        column-gap: 17px;
+        margin-bottom: 24px;
+    }
+}
+
+@media (max-width: 800px) {
+    .work__title {
+        font-size: 26px;
+        margin-bottom: 12px;
+    }
+}
+
+@media (max-width: 713px) {
+    .work__item {
+        font-size: 24px;
+        line-height: 33px;
+    }
+}
+
+@media (max-width: 578px) {
+    .work__list {
+        column-gap: 6px;
+        margin-bottom: 19px;
+    }
+    .work__item {
+        column-gap: 4px;
+    }
+    .work__item {
+        font-size: 20px;
+        line-height: 33px;
+    }
+    .work__image {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (max-width: 449px) {
+    .work__item {
+        font-size: 12px;
+        line-height: 29px;
+    }
+    .work__line {
+        width: 15px;
+        height: 15px;
+    }
+    .work__image {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.img{
+    padding: 38px 0 0;
+}
+
+.img__row{
+    display: flex;
+    column-gap: 32px;
+    align-items: center;
+    filter: drop-shadow(0 0 0.50rem #1E005A) ;
+
+}
+
+.img__i{
+    width: 100%;
+    height: 400px;
+}
+
+
+.img__i:hover{
+    transform: scale(1.1);
+    transition: transform .5s;
+}

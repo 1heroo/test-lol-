@@ -1,0 +1,98 @@
+.paris{
+    padding: 80px 0 100px;
+}
+
+.paris__content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.paris-image{
+    display: none;
+}
+
+.paris__text{
+    margin-bottom: 32px;
+    font-family: 'Gotham', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: #1E005A;
+}
+
+.paris__img{
+    width: 500px;
+}
+
+.paris__btn{
+    width: 294px;
+    height: 64px;
+    background: #FE0000;
+    border-radius: 15px;
+    cursor: pointer;
+    border: none;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+}
+
+.paris__btn:hover{
+    background: #1E005A;
+}
+
+@media (max-width: 1106px) {
+    .paris__text {
+        font-size: 19px;
+        line-height: 30px;
+    }
+}
+
+@media (max-width: 992px) {
+    .paris__content {
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+}
+
+@media (max-width: 584px) {
+    .paris__text {
+        font-size: 16px;
+        line-height: 28px;
+        margin-bottom: 19px;
+    }
+}
+
+@media (max-width: 467px) {
+    .paris__right{
+        text-align: center;
+    }
+    .paris__img {
+        width: 94%;
+    }
+    .paris__btn {
+        width: 269px;
+        height: 54px;
+        font-size: 20px;
+    }
+    .paris__text {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 410px) {
+    .paris__img {
+        width: 85%;
+    }
+    .paris__text {
+         font-size: 12px;
+        line-height: 22px;
+
+    }
+
+}
+
+/**/

@@ -1,0 +1,118 @@
+.course{
+    padding: 48px 0 78px;
+    background: #1E005A;
+}
+
+.course__top{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.course__title{
+    font-family: 'Gotham', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 40px;
+    color: #FFFFFF;
+}
+.course__text{
+    font-family: 'Gotham', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: rgba(255, 255, 255, 0.7);
+
+}
+
+.course__btn{
+    font-family: 'Gotham', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    cursor: pointer;
+    border: none;
+    color: #FFFFFF;
+    width: 294px;
+    height: 64px;
+    background: #FE0000;
+    border-radius: 15px;
+}
+
+.course__btn:hover{
+    background: #FE000090;
+}
+
+.course__img{
+    width: 100%;
+    padding: 4px 4px 4px 4px;
+    border-radius: 30px;
+    border: 3px solid #FE0000;
+    transition: all 0.3s;
+}
+
+.course__card:hover{
+    transition: all 0.5s;
+    transform: translateY(-10px);
+}
+
+.course__map-btn{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    position: absolute;
+    cursor: pointer;
+    border: none;
+    bottom: 20px;
+    left: 90px;
+}
+
+
+.course__h3{
+    position: absolute;
+    top: 20px;
+    left: 45px;
+}
+
+.course__card{
+    margin: 56px 0 44px;
+    position: relative;
+}
+
+
+
+.course__row{
+    display: flex;
+    align-items: center;
+    column-gap: 22px;
+}
+
+@media (max-width: 742px) {
+    .course__top {
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 30px;
+    }
+    .course__map {
+        text-align: center;
+        position: absolute;
+        top: 25px;
+        left: 25px;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .course__map {
+        text-align: center;
+        position: absolute;
+        top: 25px;
+        left: 25px;
+    }
+
+}

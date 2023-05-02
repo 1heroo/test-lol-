@@ -1,0 +1,146 @@
+.deutsch{
+    padding: 48px 0 140px;
+}
+
+.deutsch__term{
+    font-family: 'Gotham', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: #1E005A;
+}
+
+.deutsch__title{
+    font-family: 'Gotham', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 40px;
+    color: #1E005A;
+    margin-bottom: 25px;
+}
+
+.deutsch__img{
+    width: 65%;
+}
+
+.deutsch__images{
+    text-align: center;
+    margin: 46px 0 140px;
+}
+
+.deutsch__text{
+    font-family: 'Gotham', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: #1E005A;
+    margin-bottom: 14px;
+}
+
+.deutsch__row{
+    display: flex;
+    align-items: center;
+    column-gap: 9px;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background: #1E005A;
+}
+
+.deutsch__A1{
+    font-family: 'Gotham', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    color: #FE0000;
+    padding-left: 23px;
+}
+
+.deutsch__p{
+    font-family: 'Gotham', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: #000000;
+    margin-left: 25px;
+}
+
+.deutsch__btn{
+    width: 292px;
+    height: 64px;
+    cursor: pointer;
+    background: #FE0000;
+    border-radius: 15px;
+    font-family: 'Gotham', sans-serif;
+    border: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+}
+.deutsch__btn:hover{
+    background: #1E005A;
+    transition: 1s;
+}
+
+.deutsch__deser{
+    font-family: 'Gotham', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: #000000;
+    margin-bottom: 48px;
+}
+
+.deutsch__card{
+    margin: 48px 0 48px;
+    display: flex;
+    column-gap: 160px;
+    align-items: center;
+}
+
+@media (max-width: 1214px) {
+    .deutsch__term {
+        font-size: 20px;
+        line-height: 26px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 1209px) {
+    .deutsch__card {
+        display: none;
+    }
+}
+
+@media (max-width: 802px) {
+    .deutsch {
+        padding: 27px 0 36px;
+    }
+}
+
+@media (max-width: 500px) {
+    .deutsch__img {
+        width: 84%;
+    }
+    .deutsch__images {
+        text-align: center;
+        margin: 39px 0 48px;
+    }
+    .deutsch__text {
+        font-size: 19px;
+        line-height: 30px;
+    }
+    .deutsch__deser {
+        font-size: 19px;
+        line-height: 32px;
+        margin-bottom: 26px;
+    }
+}

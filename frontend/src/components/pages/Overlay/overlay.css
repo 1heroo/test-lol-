@@ -1,0 +1,322 @@
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #00000070;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 10;
+    transform: scale(0);
+    transition: 0.5s;
+}
+.overlay.active{
+    transform: scale(1);
+}
+
+.overlay__cross{
+    position: absolute;
+    color: #FFFFFF;
+    font-size: 35px;
+    top: 12%;
+    right: 6%;
+    display: none;
+}
+
+.overlay__popup{
+    background: #1E005A;
+    max-width: 1172px;
+    width: 100%;
+    height: 683px;
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.overlay__title{
+    font-family: 'Gotham', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 40px;
+    color: rgba(255, 255, 255, 0.6);
+    margin: 48px 0 24px;
+}
+
+.overlay__text{
+    font-family: 'Gotham', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 24px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.overlay__row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 32px;
+}
+
+.overlay__form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    flex-direction: column;
+}
+
+.overlay__btn{
+    width: 294px;
+    height: 64px;
+    border: none;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    margin-top: 64px;
+    color: #FFFFFF;
+    background: #FE0000;
+    border-radius: 15px;
+}
+
+.overlay__btn:hover{
+    background: #FE000099;
+}
+
+.overlay__label{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+
+.overlay__input{
+    border: 1px solid #FFFFFF;
+    border-radius: 10px;
+    width: 370px;
+    height: 50px;
+    background: transparent;
+    outline: none;
+    font-size: 20px;
+    padding-left: 32px;
+    color: #FFFFFF;
+}
+
+.overlay__input2{
+    width: 370px;
+    height: 100px;
+    border: 1px solid #FFFFFF;
+    border-radius: 10px;
+    background: transparent;
+    outline: none;
+    font-size: 20px;
+    padding-left: 32px;
+    color: #FFFFFF;
+}
+
+.overlay__school{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    text-align: start;
+}
+.overlay__h3{
+    font-family: 'Gotham',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #FFFFFF;
+
+}
+.overlay__label2{
+    display: flex;
+    column-gap: 14px;
+    align-items: center;
+}
+
+@media (max-width: 1000px) {
+
+}
+
+@media (max-width: 992px) {
+    .overlay__input {
+        border-radius: 7px;
+        width: 380px;
+        height: 44px;
+        font-size: 19px;
+        padding-left: 22px;
+    }
+    .overlay__input2 {
+        width: 370px;
+        height: 100px;
+        border-radius: 7px;
+        font-size: 20px;
+        padding-left: 23px;
+    }
+    .overlay__h3 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .overlay__btn {
+        width: 270px;
+        height: 53px;
+        font-size: 22px;
+        line-height: 32px;
+        margin-top: 43px;
+    }
+}
+
+@media (max-width: 877px) {
+    .overlay__title {
+        font-size: 28px;
+        line-height: 40px;
+        margin: 42px 0 17px;
+    }
+    .overlay__text {
+        font-size: 20px;
+        line-height: 32px;
+        margin-bottom: 17px;
+    }
+    .overlay__input {
+        border-radius: 7px;
+        width: 326px;
+        height: 41px;
+        font-size: 19px;
+        padding-left: 22px;
+    }
+    .overlay__input2 {
+        width: 326px;
+        height: 100px;
+        border-radius: 7px;
+        font-size: 20px;
+        padding-left: 23px;
+    }
+    .overlay__close {
+        width: 25px;
+        height: 25px;
+    }
+    .overlay__line {
+        margin-right: 40px;
+        margin-top: -42px;
+    }
+}
+
+@media (max-width: 710px) {
+    .overlay__btn {
+        width: 270px;
+        height: 53px;
+        font-size: 22px;
+        margin-top: 20px;
+    }
+    .overlay__title {
+        font-size: 22px;
+        line-height: 33px;
+        margin: 19px 0 12px;
+    }
+    .overlay__text {
+        font-size: 17px;
+        line-height: 32px;
+        margin-bottom: 7px;
+    }
+}
+
+@media (max-width: 555px) {
+    .overlay__popup {
+        width: 100%;
+    }
+    .overlay__text {
+        font-size: 14px;
+        line-height: 27px;
+        margin-bottom: 7px;
+    }
+    .overlay__title {
+        font-size: 19px;
+        line-height: 33px;
+        margin: 14px 0 12px;
+    }
+    .overlay__line {
+        margin-right: 8px;
+        margin-top: -48px;
+    }
+}
+
+@media (max-width: 405px) {
+    .overlay__input {
+        border-radius: 7px;
+        width: 287px;
+        height: 44px;
+        font-size: 19px;
+        padding-left: 22px;
+    }
+    .overlay__input2 {
+        width: 287px;
+        height: 100px;
+        border-radius: 7px;
+        font-size: 20px;
+        padding-left: 23px;
+    }
+    .overlay__h3 {
+        font-size: 15px;
+        line-height: 24px;
+    }
+    .overlay__title {
+        font-size: 16px;
+        line-height: 33px;
+        margin: 14px 0 12px;
+    }
+    .overlay__popup{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        border-radius: 0%;
+    }
+    .overlay__cross {
+        position: absolute;
+        color: #FFFFFF;
+        font-size: 30px;
+        top: 13px;
+        right: 13px;
+        display: flex;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 330px) {
+    .overlay__title {
+        font-size: 15px;
+        line-height: 27px;
+        margin: 0 0 1px;
+    }
+    .overlay__text {
+        font-size: 11px;
+        line-height: 22px;
+        margin-bottom: 1px;
+    }
+    .overlay__input {
+        border-radius: 7px;
+        width: 280px;
+        height: 34px;
+        font-size: 14px;
+        padding-left: 8px;
+    }
+    .overlay__input2 {
+        width: 280px;
+        height: 71px;
+        border-radius: 7px;
+        font-size: 14px;
+        padding-left: 8px;
+    }
+    .overlay__btn {
+        width: 197px;
+        height: 38px;
+        font-size: 16px;
+        margin-top: 9px;
+    }
+}

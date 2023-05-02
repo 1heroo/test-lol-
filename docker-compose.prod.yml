@@ -1,0 +1,58 @@
+version: "3.8"
+
+services:
+  project:
+    build:
+      context: ./backend/
+      dockerfile: Dockerfile.backend
+    restart: always
+    command: >
+      sh -c "python backend/manage.py makemigrations && 
+             python backend/manage.py migrate && 
+             python backend/manage.py runserver 0.0.0.0:8000"
+    volumes:
+      - .:/backend
+    ports:
+      - 8000:8000
+    env_file:
+      - .env
+    depends_on:
+      - db
+    networks:
+      - db-net
+
+  db:
+    image: postgres:15.1-alpine
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_PASSWORD=${DB_PASSWORD}
+      - POSTGRES_USER=${DB_USER}
+      - POSTGRES_DB=${DB_NAME}
+    networks:
+      - db-net
+
+
+  frontend:
+    restart: always
+    command: >
+      sh -c "npm run dev"
+    container_name: front
+    build:
+      context: ./frontend/
+      dockerfile: Dockerfile.frontend
+    ports:
+      - "3000:3000"
+    stdin_open: true
+    depends_on:
+      - project
+    networks:
+      - db-net
+
+
+volumes:
+  postgres_data:
+
+networks:
+  db-net:
+    driver: bridge

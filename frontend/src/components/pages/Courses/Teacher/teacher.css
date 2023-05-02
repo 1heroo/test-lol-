@@ -1,0 +1,107 @@
+
+
+.teacher__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.teacher__title{
+    font-family: 'Gotham', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 27px;
+    line-height: 35px;
+    color: #1E005A;
+    margin-bottom: 32px;
+}
+
+.teacher__text{
+
+    margin-bottom: 24px;
+    font-family: 'Gotham', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 32px;
+    color: #1E005A;
+}
+
+.teacher__h3{
+    font-family: 'Gotham', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 40px;
+    color: #1E005A;
+}
+
+.teacher__num{
+    font-family: 'Gotham', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 21px;
+    line-height: 32px;
+    color: #FE0000;
+}
+
+.teacher__icons{
+    display: flex;
+    column-gap: 12px;
+}
+
+.teacher__icon{
+    color: #1E005A;
+}
+
+.teacher__img{
+    width: 100%;
+}
+
+@media (max-width: 1275px) {
+    .teacher__num {
+        font-size: 19px;
+        line-height: 31px;
+    }
+    .teacher__text {
+        column-gap: 12px;
+        margin-bottom: 24px;
+        font-size: 19px;
+        line-height: 27px;
+    }
+    .teacher__title {
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 28px;
+    }
+}
+
+@media (max-width: 1204px) {
+    .teacher__text {
+        column-gap: 12px;
+        margin-bottom: 11px;
+        font-size: 17px;
+        line-height: 22px;
+    }
+    .teacher__title {
+        font-size: 21px;
+        line-height: 28px;
+        margin-bottom: 24px;
+    }
+}
+
+@media (max-width: 1164px) {
+    .teacher__content {
+        text-align: center;
+        flex-direction: column;
+    }
+    .teacher__text {
+        flex-direction: column;
+    }
+    .teacher__title {
+        text-align: start;
+    }
+    .teacher__h3 {
+        text-align: start;
+    }
+}

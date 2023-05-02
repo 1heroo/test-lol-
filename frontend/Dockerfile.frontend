@@ -1,0 +1,13 @@
+FROM node:12.18.3-alpine
+
+WORKDIR ./frontend
+
+COPY ./package.json/ .
+
+RUN npm install
+RUN npm rebuild
+
+CMD ["npm", "start"]
+
+COPY . ./
+EXPOSE 3000

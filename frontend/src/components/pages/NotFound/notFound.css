@@ -1,0 +1,35 @@
+.not{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0 30px;
+}
+
+.not__h2{
+    font-size: 30em;
+    color: #1E005A;
+}
+
+.not__h1{
+    font-size: 50px;
+    color: #FE0000;
+}
+
+@media (max-width: 735px) {
+    .not__h2{
+        font-size: 20em;
+        color: #1E005A;
+    }
+}
+
+@media (max-width: 500px) {
+    .not__h1{
+        font-size: 30px;
+        color: #FE0000;
+    }
+    .not__h2{
+        font-size: 14em;
+        color: #1E005A;
+    }
+}

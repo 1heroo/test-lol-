@@ -1,0 +1,10 @@
+djangorestframework
+Pillow
+python-decouple
+drf-yasg
+psycopg2-binary
+python-slugify
+djangorestframework-simplejwt==5.2.2
+django-cors-headers==3.14.0
+
+

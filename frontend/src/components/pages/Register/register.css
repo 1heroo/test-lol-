@@ -1,0 +1,71 @@
+.register{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #44c3e5;
+}
+
+.register__title{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    color: #1E005A;
+    font-size: 32px;
+}
+
+.register__span{
+    color: #000000;
+    text-align: start;
+}
+
+.register__form{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    text-align: center;
+    width: 600px;
+    height: 570px;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px 20px;
+}
+
+.register__input{
+    width: 100%;
+    height: 70px;
+    font-size: 18px;
+    padding-left: 10px;
+    outline: none;
+    color: #1E005A;
+    border: solid 1px #1E005A;
+}
+
+.register__btn{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    height: 70px;
+    cursor: pointer;
+    background: #1E005A;
+    color: white;
+    font-size: 20px;
+    border: none;
+}
+
+.register__btn:hover{
+    background: #FE0000;
+}
+
+.register__account{
+    color: #000000;
+    font-size: 23px;
+}
+
+.register__acc{
+    color: #000000;
+    font-size: 23px;
+}
+
+.register__acc:hover{
+    color: #FE0000;
+}

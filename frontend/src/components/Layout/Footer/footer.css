@@ -1,0 +1,134 @@
+.footer{
+    background: #1E005A;
+    padding: 71px 0 22px;
+}
+
+.footer__title{
+    font-family: 'Gotham', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    color: #FE0000;
+}
+
+.footer__text{
+    font-family: 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #fff;
+}
+
+.footer__list{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.footer__number{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.footer__num{
+    color: #FFFFFF;
+    font-family: 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.footer__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__span{
+    color: #FE0000;
+}
+
+.footer__icon{
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    column-gap: 13px;
+    justify-content: center;
+}
+
+.footer__icons{
+    width: 32px;
+    height: 32px;
+    color: #FE0000;
+}
+
+.footer__link{
+    font-family: 'Gotham', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: #FFFFFF;
+}
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 992px) {
+    .footer__title {
+        font-size: 35px;
+        line-height: 45px;
+    }
+    .footer__text {
+        font-size: 15px;
+        line-height: 24px;
+    }
+    .footer__num {
+        font-size: 17px;
+        line-height: 19px;
+    }
+}
+
+@media (max-width: 834px) {
+    .footer__title {
+        font-size: 28px;
+        line-height: 38px;
+    }
+    .footer__text {
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .footer__num {
+        font-size: 15px;
+        line-height: 16px;
+    }
+    .footer__list {
+        row-gap: 25px;
+    }
+}
+
+@media (max-width: 708px) {
+    .footer__content {
+        flex-direction: column;
+        row-gap: 12px;
+        margin-left: 18px;
+        align-items: start;
+    }
+    .footer__title {
+        font-size: 25px;
+    }
+
+}
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 1200px) {
+
+}

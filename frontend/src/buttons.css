@@ -1,0 +1,107 @@
+/* Buttons */
+
+.fab{
+    position: fixed;
+    right: 60px;
+    bottom: 30px;
+    border-radius: 50%;
+    z-index: 100;
+
+}
+
+button {
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.fab > button {
+    position: relative;
+    z-index: 100;
+    display: grid;
+    place-items: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 0;
+    background: #120133;
+    color: #FF3000;
+    transition: 0.2s;
+    font-size: 35px;
+}
+
+.menu{
+    position: absolute;
+    bottom: 100px;
+    left: 10px;
+    display: grid;
+    place-content: center;
+    gap: 20px;
+    width: 64px;
+    scale: 0;
+    translate: 0 80%;
+    transform-origin: 50% 50%;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.375s;
+}
+
+.fab > button > i{
+    font-size: 40px;
+}
+
+.fab.open .menu{
+    scale: 1;
+    opacity: 1;
+    translate: 0;
+    visibility: visible;
+}
+
+.menu > button{
+    position: relative;
+    display: grid;
+    place-items: center;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background: #00000090;
+    color: #FE0000;
+    transition: 0.3s;
+    font-size: 32px;
+}
+
+.menu > button:hover {
+    background: rgba(255, 255, 255, 0.16);
+}
+
+.menu > button > span {
+    position: absolute;
+    right: 84px;
+    white-space: nowrap;
+    translate: 10px 0;
+    opacity: 0;
+    visibility: hidden;
+    font-size: 30px;
+    color: #ffffff;
+    background: #00000090;
+    padding: 10px 10px;
+    border-radius: 12px;
+    text-shadow: black;
+    font-weight: 900;
+    transition: 0.5s;
+}
+
+.menu > button:hover > span {
+    translate: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+
+@media (max-width: 500px) {
+    .fab {
+        right: 10px;
+        bottom: 10px;
+    }
+}

@@ -1,0 +1,63 @@
+.official{
+    padding: 40px 0 106px;
+    background: url("../../../images/officialBg.png") center/cover no-repeat fixed;
+}
+
+.official__title{
+    margin-bottom: 52px;
+    text-align: center;
+    font-family: 'Gotham', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 40px;
+    color: #1E005A;
+}
+
+.official__card{
+    display: flex;
+    align-items: flex-start;
+    column-gap: 32px;
+    justify-content: center;
+}
+
+.official__img{
+    width: 300px;
+}
+.official__img2{
+    width: 265px;
+}
+.official__img3{
+    width: 300px;
+    margin-top: -30px;
+}
+
+@media (max-width: 1077px) {
+    
+}
+
+@media (max-width: 1065px) {
+    .official__card{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+    /*.official__img{*/
+    /*    width: 100px;*/
+
+    /*}*/
+    /*.official__img2{*/
+    /*    width: 90px;*/
+    /*}*/
+    /*.official__img3{*/
+    /*    width: 100px;*/
+    /*}*/
+}
+
+@media (max-width: 800px) {
+    .official__img3 {
+        width: 300px;
+        margin-top: 10px;
+    }
+}

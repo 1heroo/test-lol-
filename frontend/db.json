@@ -1,0 +1,128 @@
+{
+  "users": [
+    {
+      "email": "admin@mail.ru",
+      "password": "$2a$10$PII5mixRfTMeeaawTs7Tb.7VKjSiAQg.ps2330lqyjjJvcsOfQGLO",
+      "login": "sultan",
+      "phone": "+996(554)56-54-54",
+      "confirmPwd": "admin2001",
+      "orders": [
+        {
+          "name": "Sultan",
+          "surname": "Sherimbekov",
+          "social": "luffy_01_kg_00",
+          "phone": "+996(778)74-54-56",
+          "message": "asdxzcz",
+          "comments": "asdzxczxas",
+          "date": "17.4.2023"
+        },
+        {
+          "name": "Асыл",
+          "surname": "Асыл",
+          "social": "asyl",
+          "phone": "+996(556)52-12-33",
+          "message": "sdfdsd",
+          "comments": "sdfdssd",
+          "date": "17.4.2023"
+        },
+        {
+          "name": "Sultan",
+          "surname": "Sherimbekov",
+          "social": "luffy_01_kg_00",
+          "phone": "+996(778)75-55-12",
+          "message": "wedwe",
+          "comments": "ewfwe\n",
+          "date": "21.4.2023"
+        }
+      ],
+      "id": 1
+    }
+  ],
+  "orders": [
+    {
+      "name": "Sultan",
+      "surname": "Sherimbekov",
+      "social": "luffy_01_kg_00",
+      "phone": "+996(778)74-54-56",
+      "message": "asdxzcz",
+      "comments": "asdzxczxas",
+      "user": {
+        "email": "admin@mail.ru",
+        "login": "sultan",
+        "phone": "+996(554)56-54-54",
+        "confirmPwd": "admin2001",
+        "orders": [],
+        "id": 1
+      },
+      "date": "17.4.2023",
+      "id": 1
+    },
+    {
+      "name": "Асыл",
+      "surname": "Асыл",
+      "social": "asyl",
+      "phone": "+996(556)52-12-33",
+      "message": "sdfdsd",
+      "comments": "sdfdssd",
+      "user": {
+        "email": "admin@mail.ru",
+        "password": "$2a$10$PII5mixRfTMeeaawTs7Tb.7VKjSiAQg.ps2330lqyjjJvcsOfQGLO",
+        "login": "sultan",
+        "phone": "+996(554)56-54-54",
+        "confirmPwd": "admin2001",
+        "orders": [
+          {
+            "name": "Sultan",
+            "surname": "Sherimbekov",
+            "social": "luffy_01_kg_00",
+            "phone": "+996(778)74-54-56",
+            "message": "asdxzcz",
+            "comments": "asdzxczxas",
+            "date": "17.4.2023"
+          }
+        ],
+        "id": 1
+      },
+      "date": "17.4.2023",
+      "id": 2
+    },
+    {
+      "name": "Sultan",
+      "surname": "Sherimbekov",
+      "social": "luffy_01_kg_00",
+      "phone": "+996(778)75-55-12",
+      "message": "wedwe",
+      "comments": "ewfwe\n",
+      "user": {
+        "email": "admin@mail.ru",
+        "password": "$2a$10$PII5mixRfTMeeaawTs7Tb.7VKjSiAQg.ps2330lqyjjJvcsOfQGLO",
+        "login": "sultan",
+        "phone": "+996(554)56-54-54",
+        "confirmPwd": "admin2001",
+        "orders": [
+          {
+            "name": "Sultan",
+            "surname": "Sherimbekov",
+            "social": "luffy_01_kg_00",
+            "phone": "+996(778)74-54-56",
+            "message": "asdxzcz",
+            "comments": "asdzxczxas",
+            "date": "17.4.2023"
+          },
+          {
+            "name": "Асыл",
+            "surname": "Асыл",
+            "social": "asyl",
+            "phone": "+996(556)52-12-33",
+            "message": "sdfdsd",
+            "comments": "sdfdssd",
+            "date": "17.4.2023"
+          }
+        ],
+        "id": 1
+      },
+      "date": "21.4.2023",
+      "id": 3
+    }
+  ]
+}

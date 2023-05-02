@@ -1,0 +1,34 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.container{
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+::-webkit-scrollbar{
+    width: 8px;
+}
+
+::-webkit-scrollbar-track{
+    background: #d1e5ff;
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(#FE0000, #1E005A);
+    border-radius: 10px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+

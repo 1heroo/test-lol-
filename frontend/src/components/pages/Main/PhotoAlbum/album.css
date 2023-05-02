@@ -1,0 +1,43 @@
+.album{
+    padding: 0 0 96px;
+}
+
+.album__card{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 32px;
+    margin: 32px 0 32px;
+    filter: drop-shadow(0 0 0.50rem #1E005A) ;
+}
+
+.album__img{
+    width: 100%;
+
+}
+
+.album__img:hover{
+    transform: scale(1.1);
+    transition: transform .5s;
+}
+
+
+.album__title{
+    font-family: 'Gotham', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 16px;
+    color: #1E005A;
+}
+
+.album__text{
+    font-family: 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 40px;
+    color: rgba(0, 0, 0, 0.7);
+}
