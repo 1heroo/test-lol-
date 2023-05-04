@@ -160,6 +160,8 @@ REST_FRAMEWORK = {
 
 CORS_ALLOWED_ORIGINS = [
     "http://0.0.0.0:3000",
+    "http://195.38.164.45:3000",
+    "http://195.38.164.45"
 ]
 
 CORS_ALLOW_METHODS = [
