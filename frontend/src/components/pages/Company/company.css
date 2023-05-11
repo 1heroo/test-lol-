@@ -1,5 +1,5 @@
 .company{
-    background: url("../../images/panorama.jpg") 100% 100% / cover fixed;
+    background: url("../../images/panorama.jpg") 100% 100% / cover ;
 }
 
 .company__content{
@@ -89,11 +89,5 @@
         font-size: 23px;
         line-height: 32px;
         margin-bottom: 12px;
-    }
-}
-
-@media (max-width: 400px) {
-    .company{
-        background: url("../../images/companyFons.png") center/cover no-repeat;
     }
 }

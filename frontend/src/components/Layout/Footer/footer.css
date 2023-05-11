@@ -125,10 +125,10 @@
 
 }
 
-@media (max-width: 1200px) {
-
-}
-
-@media (max-width: 1200px) {
-
+@media (max-width: 360px) {
+    .footer__icon {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
 }

@@ -5,7 +5,7 @@
     right: 60px;
     bottom: 30px;
     border-radius: 50%;
-    z-index: 100;
+    z-index: 10;
 
 }
 
@@ -17,7 +17,9 @@ button {
 }
 
 .fab > button {
+    outline: none;
     position: relative;
+    padding: 10px;
     z-index: 100;
     display: grid;
     place-items: center;
@@ -25,10 +27,62 @@ button {
     height: 80px;
     border-radius: 50%;
     border: 0;
-    background: #120133;
-    color: #FF3000;
-    transition: 0.2s;
+    color: #313133;
+    background: #4FD1C5;
+    background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 100%);
+    transition: all 0.3s ease-in-out 0s;
     font-size: 35px;
+    box-shadow: 1px 0 28px rgba(84,216,201,4.64);
+}
+
+.fab > button::before {
+    content: '';
+    border-radius: 1000px;
+    min-width: calc(112px + -35px);
+    min-height: calc(60px + 12px);
+    border: 6px solid #00FFCB;
+    box-shadow: 0 0 60px rgba(0,255,203,.64);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all .3s ease-in-out 0s;
+}
+
+.fab button:hover, .button:focus {
+    color: #313133;
+    transform: translateY(-6px);
+}
+
+.fab button:hover::before, button:focus::before {
+    opacity: 1;
+}
+
+.fab > button::after {
+    content: '';
+    width: 30px; height: 30px;
+    border-radius: 100%;
+    border: 6px solid #00FFCB;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: ring 1.5s infinite;
+}
+
+@keyframes ring {
+    0% {
+        width: 30px;
+        height: 30px;
+        opacity: 1;
+    }
+    100% {
+        width: 150px;
+        height: 150px;
+        opacity: 0;
+    }
 }
 
 .menu{
@@ -101,7 +155,16 @@ button {
 
 @media (max-width: 500px) {
     .fab {
-        right: 10px;
-        bottom: 10px;
+        right: 20px;
+        bottom: 19px;
     }
+    .fab button:hover, .button:focus {
+        color: #313133;
+        transform: translateY(0);
+    }
+
+    .fab button:hover::before, button:focus::before {
+        opacity: 0;
+    }
+
 }

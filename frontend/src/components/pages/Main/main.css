@@ -1,5 +1,5 @@
 .main{
-    background: url("../../images/reiseFon.png") 139% 18% /cover no-repeat fixed;
+    background: url("../../images/reiseFon.png") center /cover no-repeat ;
     animation-name: animate;
     transition: 5s;
     animation-duration: 30s;
@@ -15,15 +15,12 @@
         background-image: url("../../images/brandenburg.jpg");
     }
     20% {
-        background-image: url("../../images/germany-fon.jpg");
-    }
-    40% {
         background-image: url("../../images/coursesImg.png");
     }
-    60% {
+    40% {
         background-image: url("../../images/Frankfurt.jpg");
     }
-    80% {
+    60% {
         background-image: url("../../images/reiseFon.png");
     }
 }
@@ -159,9 +156,6 @@
 }
 
 @media (max-width: 492px) {
-    /*.main{*/
-    /*    background: url("../../images/fon.png") center/cover no-repeat;*/
-    /*}*/
     .main__title {
         font-size: 22px;
     }
@@ -177,9 +171,6 @@
 }
 
 @media (max-width: 375px) {
-    /*.main{*/
-    /*    background: url("../../images/fon.png") center/cover no-repeat;*/
-    /*}*/
     .main__left {
         margin: 28px 0 25px;
     }
@@ -209,4 +200,3 @@
         margin: 1px 0 5px;
     }
 }
-

@@ -1,5 +1,5 @@
 .courses{
-    background: url("../../images/panorama.jpg") 100% 100% /cover fixed;
+    background: url("../../images/berlin.jpg") 60% 100%/cover no-repeat;
 }
 
 .courses__content {
@@ -92,9 +92,6 @@
 }
 
 @media (max-width: 496px) {
-    .courses{
-        background: url("../../images/mobileBg.png") center/cover no-repeat;
-    }
     .courses__title {
         font-size: 34px;
         line-height: 31px;

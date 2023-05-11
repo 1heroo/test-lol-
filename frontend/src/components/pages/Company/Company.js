@@ -4,7 +4,7 @@ import './company.css'
 
 import {RiRoadMapFill} from "react-icons/ri";
 import {FaInstagram, FaFacebook} from 'react-icons/fa'
-import { ImWhatsapp } from 'react-icons/im';
+import {ImWhatsapp} from 'react-icons/im';
 
 
 import License from "./License/License";

@@ -69,14 +69,18 @@
     cursor: pointer;
     border: none;
     bottom: 20px;
-    left: 90px;
+    left: 80px;
+    color: white;
+    font-size: 30px;
 }
 
 
 .course__h3{
     position: absolute;
-    top: 20px;
-    left: 45px;
+    top: 30px;
+    left: 35px;
+    color: #ffffff;
+    font-size: 25px;
 }
 
 .course__card{

@@ -3,9 +3,10 @@ from django.contrib.auth.models import AbstractUser
 from django.utils.crypto import get_random_string
 from slugify import slugify
 
+
 class ReiseUser(AbstractUser):
     username = models.CharField(max_length=20, unique=True, null=False)
-    phone = models.CharField(max_length=20, unique=True, null=False)
+    phone = models.CharField(max_length=20, unique=True, null=True)
     email = models.EmailField(max_length=254, unique=True, null=False)
 
 

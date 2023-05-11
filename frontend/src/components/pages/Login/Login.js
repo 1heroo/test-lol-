@@ -42,9 +42,9 @@ const Admin = () => {
                 })} className="login__input" type="password" placeholder='Введите пароль'/>
                 <span className="login__span">{errors?.password?.message}</span>
                 <button className="login__btn">Войти</button>
-                <p className="login__account">
-                    Нет аккаунта, <Link className="login__acc" to='/register'>Регистрация</Link>
-                </p>
+                {/*<p className="login__account">*/}
+                {/*    Нет аккаунта, <Link className="login__acc" to='/register'>Регистрация</Link>*/}
+                {/*</p>*/}
                 <Link className="login__acc" to='/'>На главную</Link>
             </form>
         </section>

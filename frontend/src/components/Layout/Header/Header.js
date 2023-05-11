@@ -12,9 +12,9 @@ const Header = () => {
     const {user} = useContext(CustomContext);
     const [open, setOpen] = useState(false);
     const {openJob, burger, setBurger} = useContext(CustomContext);
-    console.log(user)
+
     const closeCart = (e) => {
-        if (e.target.class === 'header__burger') {
+        if (e.target.class === 'burgers') {
 
         }
     };
@@ -38,8 +38,11 @@ const Header = () => {
                             }
                         </li>
                     </ul>
-                    <div onClick={() => setBurger(!burger)} className={`header__burger ${burger ? 'header__burger_active' : ''}`}>
-                        <span className="header__burger-line"/>
+                    <div className={`burger ${burger ? 'burger_active' : ''}`} onClick={() => setBurger(!burger)}>
+                        <span className="burger__line"/>
+                    </div>
+                    <div onClick={() => setBurger(false)} className={`burgers ${burger ? 'burgers_active' : ''}`}>
+
                     </div>
                 </nav>
             </div>

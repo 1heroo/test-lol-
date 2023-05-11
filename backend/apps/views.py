@@ -6,7 +6,6 @@ from rest_framework import status, generics
 
 from drf_yasg.utils import swagger_auto_schema
 
-
 from .models import Registration, Work, ReiseUser
 from .serializers import (
     RegistrationSerializer,
@@ -33,6 +32,7 @@ class RegistrationViewSet(mixins.CreateModelMixin,
         if self.action in ['destroy', 'update', 'partail_update']:
             self.permission_classes = [IsAdminUser]
         return super().get_permissions()
+
 
 class WorkViewSet(mixins.CreateModelMixin,
                   mixins.DestroyModelMixin,
@@ -62,14 +62,13 @@ class WorkViewSet(mixins.CreateModelMixin,
 
 
 class ReiseUserView(APIView):
-
     permission_classes = [IsAuthenticated]
 
     def get(self, request):
         user = request.user
         serializer = ReiseUserSerializer(user)
         return Response(serializer.data, status=status.HTTP_200_OK
-)
+                        )
 
     @swagger_auto_schema(request_body=ReiseUserSerializer)
     def put(self, request):
@@ -82,7 +81,6 @@ class ReiseUserView(APIView):
 
 
 class GetQuestionsView(APIView):
-
     permission_classes = [IsAuthenticated, IsAdminUser]
 
     def get(self, request):
