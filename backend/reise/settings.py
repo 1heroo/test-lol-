@@ -63,6 +63,7 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
+    "apps.middleware.XForwardedForMiddleware",
 ]
 
 ROOT_URLCONF = "reise.urls"
@@ -135,13 +136,15 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = 'staticfiles/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 STATIC_DIRS = [
-    os.path.join(BASE_DIR, 'reise/static'),
+    os.path.join(BASE_DIR, 'static'),
 ]
 
+
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'reise/static')]
 
 
 MEDIA_URL = 'media/'
@@ -161,7 +164,10 @@ REST_FRAMEWORK = {
 CORS_ALLOWED_ORIGINS = [
     "http://0.0.0.0:3000",
     "http://195.38.164.45:3000",
-    "http://195.38.164.45"
+    "http://195.38.164.45:8000",
+    "http://195.38.164.45",
+    "http://www.reise.kg",
+    "http://reise.kg",
 ]
 
 CORS_ALLOW_METHODS = [
@@ -212,4 +218,12 @@ SWAGGER_SETTINGS = {
     }
 }
 
-CSRF_TRUSTED_ORIGINS = ['http://localhost', 'http://localhost:8000']
+CSRF_TRUSTED_ORIGINS = ['http://localhost', 'http://localhost:8000', 'http://195.38.164.45', 'http://195.38.164.45:8000', "http://reise.kg", "http://www.reise.kg", "https://www.reise.kg", "https://reise.kg"]
+
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+
+CORS_ORIGIN_ALLOW_ALL = True
+
+
+USE_X_FORWARDED_HOST = True
+USE_X_FORWARDED_PORT = True

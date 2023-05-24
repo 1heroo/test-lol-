@@ -7,11 +7,12 @@ services:
       dockerfile: Dockerfile.backend
     restart: always
     command: >
-      sh -c "python backend/manage.py makemigrations && 
+      sh -c "python backend/manage.py collectstatic --noinput && 
              python backend/manage.py migrate && 
              python backend/manage.py runserver 0.0.0.0:8000"
     volumes:
       - .:/backend
+      - static_files:/backend/static
     ports:
       - 8000:8000
     env_file:
@@ -52,6 +53,9 @@ services:
     image: nginx
     volumes:
       - ./nginx/nginx.conf:/etc/nginx/conf.d/default.conf
+      -  static_files:/static_files
+      - ./certbot/www:/var/www/certbot/:ro
+      - ./certbot/conf/:/etc/nginx/ssl/:rw
     ports:
       - "80:80"
       - "443:443"
@@ -61,10 +65,19 @@ services:
     networks:
       - db-net
 
+  certbot:
+    image: certbot/certbot:latest
+    volumes:
+      - ./certbot/www/:/var/www/certbot/:rw  
+      - ./certbot/conf/:/etc/letsencrypt/:rw
+
+    networks:
+      - db-net
 
 
 volumes:
   postgres_data:
+  static_files:
 
 networks:
   db-net:
