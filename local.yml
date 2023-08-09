@@ -19,8 +19,6 @@ services:
       - .env
     depends_on:
       - db
-    networks:
-      - db-net
 
   db:
     image: postgres:15.1-alpine
@@ -30,8 +28,6 @@ services:
       - POSTGRES_PASSWORD=${DB_PASSWORD}
       - POSTGRES_USER=${DB_USER}
       - POSTGRES_DB=${DB_NAME}
-    networks:
-      - db-net
 
   frontend:
     restart: always
@@ -43,42 +39,32 @@ services:
       dockerfile: Dockerfile.frontend
     ports:
       - "3000:3000"
-    stdin_open: true
-    depends_on:
-      - project
-    networks:
-      - db-net
+    # stdin_open: true
 
-  nginx:
-    image: nginx
-    volumes:
-      - ./nginx/nginx.conf:/etc/nginx/conf.d/default.conf
-      -  static_files:/static_files
-      - ./certbot/www:/var/www/certbot/:ro
-      - ./certbot/conf/:/etc/nginx/ssl/:rw
-    ports:
-      - "80:80"
-      - "443:443"
-    depends_on:
-      - project
-      - frontend
-    networks:
-      - db-net
+  # nginx:
+  #   image: nginx
+  #   volumes:
+  #     - ./nginx/nginx.conf:/etc/nginx/conf.d/default.conf
+  #     -  static_files:/static_files
+  #     - ./certbot/www:/var/www/certbot/:ro
+  #     - ./certbot/conf/:/etc/nginx/ssl/:rw
+  #   ports:
+  #     - "80:80"
+  #     - "443:443"
+  #   depends_on:
+  #     - project
+  #     - frontend
+  #   networks:
+  #     - db-net
 
-  certbot:
-    image: certbot/certbot:latest
-    volumes:
-      - ./certbot/www/:/var/www/certbot/:rw  
-      - ./certbot/conf/:/etc/letsencrypt/:rw
-
-    networks:
-      - db-net
+  # certbot:
+  #   image: certbot/certbot:latest
+  #   volumes:
+  #     - ./certbot/www/:/var/www/certbot/:rw  
+  #     - ./certbot/conf/:/etc/letsencrypt/:rw
 
 
 volumes:
   postgres_data:
   static_files:
 
-networks:
-  db-net:
-    driver: bridge
