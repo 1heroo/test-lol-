@@ -6,13 +6,13 @@ import "swiper/css";
 import "./sliderFaces.css";
 
 import { Autoplay } from "swiper";
-import img from "../../../../images/img.JPG";
-import img1 from "../../../../images/img1.JPG";
-import img2 from "../../../../images/img2.JPG";
-import img3 from "../../../../images/img3.JPG";
-import img4 from "../../../../images/img4.JPG";
-import img5 from "../../../../images/img5.JPG";
-import img6 from "../../../../images/img6.JPG";
+import img from "../../../../images/tattygul.png";
+import img1 from "../../../../images/eliza.png";
+import img2 from "../../../../images/barsbek.png";
+import img3 from "../../../../images/ainazik1.png";
+import img4 from "../../../../images/maksat.png";
+import img5 from "../../../../images/alina.png";
+import img6 from "../../../../images/elnura.png";
 
 
 
@@ -21,8 +21,8 @@ const SliderCourse = () => {
     return (
         <>
             <Swiper
-                autoplay={{delay: 3000, disableOnInteraction: false,}}
-                speed={3000}
+                autoplay={{delay: 4000, disableOnInteraction: false,}}
+                speed={2000}
                 slidesPerView={1}
                 spaceBetween={20}
                 breakpoints={{

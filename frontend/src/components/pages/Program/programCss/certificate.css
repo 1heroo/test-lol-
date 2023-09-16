@@ -120,10 +120,7 @@
 
 
 .certificate__radius{
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background: #1E005A;
+    color: #1E005A;
 }
 
 .certificate__list{
@@ -135,7 +132,7 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 28px;
-    color: #000000;
+    color: #1E005A;
     margin-bottom: 18px;
 }
 

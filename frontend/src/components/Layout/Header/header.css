@@ -10,6 +10,7 @@
 
 .header__img{
     z-index: 100;
+    margin: 10px;
 }
 
 .header__list{
@@ -213,9 +214,9 @@
     .header {
         background: #1E005A;
     }
-    .header__img{
-        width: 230px;
-        height: 70px;
+    .header__img {
+        width: 160px;
+        height: 52px;
     }
     /*.header__list_active{*/
     /*    top: 8%;*/
@@ -225,7 +226,7 @@
 
 @media (max-width: 360px) {
     .header__img {
-        width: 180px;
-        height: 68px;
+        width: 160px;
+        height: 52px;
     }
 }

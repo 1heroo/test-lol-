@@ -23,18 +23,16 @@
 
 .official__img{
     width: 300px;
+    margin-top: -25px;
 }
 .official__img2{
-    width: 265px;
+    width: 300px;
 }
 .official__img3{
     width: 300px;
     margin-top: -30px;
 }
 
-@media (max-width: 1077px) {
-    
-}
 
 @media (max-width: 1065px) {
     .official__card{
@@ -43,21 +41,37 @@
         gap: 30px;
         align-items: center;
     }
-    /*.official__img{*/
-    /*    width: 100px;*/
-
-    /*}*/
-    /*.official__img2{*/
-    /*    width: 90px;*/
-    /*}*/
-    /*.official__img3{*/
-    /*    width: 100px;*/
-    /*}*/
 }
+
+@media (max-width: 992px) {
+    .official__img2 {
+        width: 300px;
+        margin-left: -49px;
+        margin-bottom: 15px;
+    }
+}
+
 
 @media (max-width: 800px) {
     .official__img3 {
         width: 300px;
         margin-top: 10px;
+    }
+    .official__img2 {
+        width: 300px;
+        margin-bottom: -6px;
+        margin-left: -56px;
+    }
+}
+
+@media (max-width: 360px) {
+    .official__img {
+        width: 260px;
+    }
+    .official__img3 {
+        width: 260px;
+    }
+    .official__img2 {
+        width: 260px;
     }
 }

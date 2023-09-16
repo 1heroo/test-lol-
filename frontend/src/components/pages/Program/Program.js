@@ -14,6 +14,8 @@ import 'react-lazy-load-image-component/src/effects/blur.css';
 import Overlay from "../Overlay/Overlay";
 import Buttons from "../../../Buttons";
 
+import {FaCircle} from 'react-icons/fa'
+
 
 const Program = () => {
     const {tab, toggleTab} = useContext(CustomContext);
@@ -77,7 +79,7 @@ const Program = () => {
                                     <svg width="37" height="35" viewBox="0 0 37 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M0.00141144 17.5L36.0014 0.612505L36.0014 34.3875L0.00141144 17.5Z" fill="#FE0000"/>
                                     </svg>
-                                    <p className="annual__text">Программа для дипломированных специалистов</p>
+                                    <p className="certificate__text">Работа для дипломированных специалистов</p>
                                     <div className="annual__line"/>
                                     <h2 className="annual__left-title">Годовая работа</h2>
                                 </div>
@@ -117,37 +119,37 @@ const Program = () => {
                                 <div className="diploma__content">
                                     <ul className="diploma__list" data-aos="fade-right">
                                         <li className="diploma__title">Техническая сфера</li>
-                                        <li className="diploma__item"><div className="diploma__line"/>Прикладная механика</li>
-                                        <li className="diploma__item"><div className="diploma__line"/>Машиностроение</li>
-                                        <li className="diploma__item"><div className="diploma__line"/>Логистика</li>
-                                        <li className="diploma__item"><div className="diploma__line"/>Инфоромационные системы и технологии</li>
-                                        <li className="diploma__item"><div className="diploma__line"/>Электроэнергетика</li>
+                                        <li className="diploma__item"><FaCircle className="diploma__line"/>Прикладная механика</li>
+                                        <li className="diploma__item"><FaCircle className="diploma__line"/>Машиностроение</li>
+                                        <li className="diploma__item"><FaCircle className="diploma__line"/>Логистика</li>
+                                        <li className="diploma__item"><FaCircle className="diploma__line"/>Инфоромационные системы и технологии</li>
+                                        <li className="diploma__item"><FaCircle className="diploma__line"/>Электроэнергетика</li>
 
                                     </ul>
                                     <ul className="diploma__list" data-aos="zoom-in">
                                         <li className="diploma__title">Сфера гостеприимства</li>
-                                        <li className="diploma__item"><div className="diploma__line"/>Туризм</li>
-                                        <li className="diploma__item"><div className="diploma__line"/>Международный туризм</li>
-                                        <li className="diploma__item"><div className="diploma__line"/>Менеджмент Турзима и гостиничного дела</li>
-                                        <li className="diploma__item"><div className="diploma__line"/>Туристический бизнес и служба гидов</li>
-                                        <li className="diploma__item"><div className="diploma__line"/>Ресторанное дело и искусство кулинарии</li>
-                                        <li className="diploma__item"><div className="diploma__line"/>Гостиничное дело</li>
-                                        <li className="diploma__item"><div className="diploma__line"/>Менеджмент</li>
-                                        <li className="diploma__item"><div className="diploma__line"/>Управление бизнесом</li>
-                                        <li className="diploma__item"><div className="diploma__line"/>Экономика</li>
-                                        <li className="diploma__item"><div className="diploma__line"/>Пищевая инженерия </li>
-                                        <li className="diploma__item"><div className="diploma__line"/>Технология продукции и организация общественного питания</li>
-                                        <li className="diploma__item"><div className="diploma__line"/>Германистика</li>
-                                        <li className="diploma__item"><div className="diploma__line"/>Лингвистика(немецкий язык) </li>
-                                        <li className="diploma__item"><div className="diploma__line"/>Филология немецкого языка</li>
+                                        <li className="diploma__item"><FaCircle className="diploma__line"/>Туризм</li>
+                                        <li className="diploma__item"><FaCircle className="diploma__line"/>Международный туризм</li>
+                                        <li className="diploma__item"><FaCircle className="diploma__line"/>Менеджмент туризма и гостиничного дела</li>
+                                        <li className="diploma__item"><FaCircle className="diploma__line"/>Туристический бизнес и служба гидов</li>
+                                        <li className="diploma__item"><FaCircle className="diploma__line"/>Ресторанное дело и искусство кулинарии</li>
+                                        <li className="diploma__item"><FaCircle className="diploma__line"/>Гостиничное дело</li>
+                                        <li className="diploma__item"><FaCircle className="diploma__line"/>Менеджмент</li>
+                                        <li className="diploma__item"><FaCircle className="diploma__line"/>Управление бизнесом</li>
+                                        <li className="diploma__item"><FaCircle className="diploma__line"/>Экономика</li>
+                                        <li className="diploma__item"><FaCircle className="diploma__line"/>Пищевая инженерия </li>
+                                        <li className="diploma__item"><FaCircle className="diploma__line"/>Технология продукции и организация общественного питания</li>
+                                        <li className="diploma__item"><FaCircle className="diploma__line"/>Германистика</li>
+                                        <li className="diploma__item"><FaCircle className="diploma__line"/>Лингвистика(немецкий язык) </li>
+                                        <li className="diploma__item"><FaCircle className="diploma__line"/>Филология немецкого языка</li>
 
                                     </ul>
                                     <ul className="diploma__list" data-aos="fade-right">
                                         <li className="diploma__title">Медицинская сфера</li>
-                                        <li className="diploma__item"><div className="diploma__line"/>Медсестры: закончившие колледж или университет</li>
-                                        <li className="diploma__item"><div className="diploma__line"/>Медсестры: закончившие медицинские училище</li>
-                                        <li className="diploma__item"><div className="diploma__line"/>Косметолог</li>
-                                        <li className="diploma__item"><div className="diploma__line"/>Массажист</li>
+                                        <li className="diploma__item"><FaCircle className="diploma__line"/>Медсестры: закончившие колледж или университет</li>
+                                        <li className="diploma__item"><FaCircle className="diploma__line"/>Медсестры: закончившие медицинские училище</li>
+                                        <li className="diploma__item"><FaCircle className="diploma__line"/>Косметолог</li>
+                                        <li className="diploma__item"><FaCircle className="diploma__line"/>Массажист</li>
                                     </ul>
                                 </div>
                             </div>
@@ -197,12 +199,12 @@ const Program = () => {
                                     <div data-aos="fade-right">
                                         <h3 className="certificate__h3">Обучение подходит по специальностям</h3>
                                         <ul>
-                                            <li className="certificate__list"><div className="certificate__radius"/>Fachmann/Frau für Systemgastronomie (эксперт в сфере обслуживания)</li>
-                                            <li className="certificate__list"><div className="certificate__radius"/>Restaurantfachfrau/Mann (эксперт по Ресторанному делу)</li>
-                                            <li className="certificate__list"><div className="certificate__radius"/>Hotelfachmann/Frau (эксперт по отельному делу)</li>
-                                            <li className="certificate__list"><div className="certificate__radius"/>Fachkraft im Gastgewerbe (эксперт в сфере гостеприимства)</li>
-                                            <li className="certificate__list"><div className="certificate__radius"/>Koch/in (повар)</li>
-                                            <li className="certificate__list"><div className="certificate__radius"/>Если вам нужна информация о других специальностях,<br/> пожалуйста, обратитесь в наш офис или оставьте заявку на консультацию. <br/>Мы с удовольствием ответим на все ваши вопросы<br/> и предоставим необходимую информацию.</li>
+                                            <li className="certificate__list"><FaCircle className="certificate__radius"/>Fachmann/Frau für Systemgastronomie (эксперт в сфере обслуживания)</li>
+                                            <li className="certificate__list"><FaCircle className="certificate__radius"/>Restaurantfachfrau/Mann (эксперт по Ресторанному делу)</li>
+                                            <li className="certificate__list"><FaCircle className="certificate__radius"/>Hotelfachmann/Frau (эксперт по отельному делу)</li>
+                                            <li className="certificate__list"><FaCircle className="certificate__radius"/>Fachkraft im Gastgewerbe (эксперт в сфере гостеприимства)</li>
+                                            <li className="certificate__list"><FaCircle className="certificate__radius"/>Koch/in (повар)</li>
+                                            <li className="certificate__list"><FaCircle className="certificate__radius"/>Если вам нужна информация о других специальностях,<br/> пожалуйста, обратитесь в наш офис или оставьте заявку на консультацию. <br/>Мы с удовольствием ответим на все ваши вопросы<br/> и предоставим необходимую информацию.</li>
                                         </ul>
                                     </div>
                                     <div className="certificate__block-radius" data-aos="fade-left">

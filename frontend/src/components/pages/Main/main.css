@@ -1,29 +1,8 @@
 .main{
-    background: url("../../images/reiseFon.png") center /cover no-repeat ;
-    animation-name: animate;
-    transition: 5s;
-    animation-duration: 30s;
-    animation-direction: alternate-reverse;
-    animation-fill-mode: forwards;
-    animation-iteration-count: infinite;
-    animation-play-state: running;
-    animation-timing-function: ease-in-out;
+    background: url("../../images/zakat.jpg") center/cover no-repeat;
+
 }
 
-@keyframes animate {
-    0% {
-        background-image: url("../../images/brandenburg.jpg");
-    }
-    20% {
-        background-image: url("../../images/coursesImg.png");
-    }
-    40% {
-        background-image: url("../../images/Frankfurt.jpg");
-    }
-    60% {
-        background-image: url("../../images/reiseFon.png");
-    }
-}
 
 .main__content{
     display: flex;
@@ -36,32 +15,31 @@
 }
 
 .main__icons{
-    background: #00000060;
+    background: #ffffff99;
     border-radius: 12px;
     padding: 20px 10px 20px 20px;
-    margin: 86px 0 350px;
+    width: 505px;
+    margin: -20px 0 350px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    text-align: end;
+    gap: 25px;
+    border: 3px solid #FE0000;
 }
 
 .main__icon{
-
     color: #FE0000;
-    font-weight: 400;
+    font-weight: bold;
     font-size: 27px;
     cursor: pointer;
-    text-shadow: 1px 1px 2px azure, 0 0 1px aliceblue, 0 0 9px #1E005A;
 }
 
 .main__title{
     border-radius: 12px;
     font-family: 'Arial', sans-serif;
     font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 32px;
+    font-weight: bold;
+    font-size: 98px;
+    line-height: 83px;
     color: #1E005A;
     transform: translate(0, 120%);
     opacity: 0;
@@ -73,16 +51,16 @@
 }
 
 .main__number{
+    font-weight: bold;
     color: #FE0000;
-    text-shadow: 1px 1px 2px azure, 0 0 1px aliceblue, 0 0 9px #1E005A;
     font-size: 27px;
 }
 
 .main__text{
     font-family: 'Garamond', sans-serif;
     font-style: normal;
-    font-weight: 700;
-    font-size: 32px;
+    font-weight: bold;
+    font-size: 43px;
     line-height: 40px;
     margin: 37px 0 48px;
     color: #1E005A;
@@ -107,18 +85,60 @@
     background: #FE000090;
 }
 
+@media (max-width: 1280px) {
+    .main__title {
+        font-size: 90px;
+    }
+}
+
+@media (max-width: 1215px) {
+    .main__title {
+        font-size: 78px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .main__title {
+        font-size: 78px;
+    }
+    .main__text {
+        font-size: 36px;
+        line-height: 37px;
+        margin: 13px 0 28px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .main__icons {
+        border-radius: 15px;
+        padding: 20px 10px 20px 20px;
+        width: 572px;
+        gap: 29px;
+    }
+}
+
 @media (max-width: 992px) {
-    .main__number{
-        display: none;
+    .main__left {
+        margin: 189px 0 100px;
+    }
+    .main__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .main__icons {
+        border-radius: 15px;
+        padding: 20px 20px 20px 20px;
+        width: 416px;
+        gap: 30px;
     }
 }
 
 @media (max-width: 769px) {
-    .main__left {
-        margin: 195px 0 353px;
-    }
     .main__title {
-        font-size: 33px;
+        font-size: 69px;
+        line-height: 69px;
     }
     .main__text {
         font-size: 26px;
@@ -130,12 +150,16 @@
         width: 251px;
         height: 50px;
     }
+    .main__left {
+        margin: 80px 0 62px;
+    }
+    .main__icons {
+        margin: 5px 0 86px;
+    }
 }
 
 @media (max-width: 693px) {
-    .main__icons {
-        margin: 86px 0 471px;
-    }
+
 }
 
 @media (max-width: 592px) {
@@ -147,17 +171,16 @@
         margin: 12px 0 123px;
         display: flex;
         flex-direction: column;
+        width: 325px;
         gap: 30px;
         text-align: start;
-    }
-    .main__left {
-        margin: 95px 0 34px;
     }
 }
 
 @media (max-width: 492px) {
     .main__title {
-        font-size: 22px;
+        font-size: 46px;
+        line-height: 47px;
     }
     .main__text {
         font-size: 18px;
@@ -167,6 +190,10 @@
         font-size: 16px;
         width: 215px;
         height: 41px;
+    }
+    .main__icons {
+        margin: 4px 0 33px;
+        background: #ffffff65;
     }
 }
 
@@ -178,11 +205,9 @@
         font-size: 16px;
         margin: 1px 0 5px;
     }
-    .main__icons {
-        margin: 12px 0 200px;
-    }
     .main__title {
-        font-size: 19px;
+        font-size: 42px;
+        line-height: 1;
     }
     .main__btn {
         font-size: 14px;
@@ -197,6 +222,19 @@
     }
     .main__text {
         font-size: 16px;
-        margin: 1px 0 5px;
+        margin: 10px 0 19px;
+        line-height: 19px;
+    }
+    .main__icons {
+        width: 100%;
+    }
+    .main__number {
+        font-weight: bold;
+        color: #FE0000;
+        font-size: 22px;
+    }
+    .main__icon {
+        font-size: 22px;
     }
 }
+

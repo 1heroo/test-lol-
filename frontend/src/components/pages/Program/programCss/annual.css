@@ -8,7 +8,8 @@
 
 .annual__content{
     display: flex;
-    column-gap: 100px;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .annual__title{
@@ -96,7 +97,7 @@
 
 .annual__img{
     margin-top: -76px;
-    width: 100%;
+    width: 330px;
     height: 350px;
 }
 
@@ -166,6 +167,12 @@
     }
 }
 
+@media (max-width: 1088px) {
+    .annual__right{
+        text-align: center;
+    }
+}
+
 @media (max-width: 803px) {
     .annual__info {
         display: flex;
@@ -180,7 +187,7 @@
 @media (max-width: 719px) {
     .annual__img{
         width: 100%;
-        height: 350px;
+        height: 297px;
     }
     .annual__line {
         width: 100%;
@@ -217,7 +224,7 @@
     .annual__euro {
         flex-direction: column;
     }
-   
+
 }
 
 @media (max-width: 426px) {
@@ -227,12 +234,8 @@
         margin-left: 36px;
     }
     .annual {
-        padding: 24px 0 19px;
+        padding: 0 0 6px;
     }
-    .annual__right{
-        text-align: center;
-    }
-   
     .annual__h4 {
         font-size: 16px;
     }
@@ -271,10 +274,7 @@
 }
 
 .diploma__line{
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background: #FE0000;
+    color: #FE0000;
 }
 
 .diploma__content{
@@ -292,11 +292,33 @@
     }
 }
 
+@media (max-width: 774px) {
+    .annual__line {
+        width: 100%;
+        margin: 17px 0 24px;
+    }
+}
+
 @media (max-width: 445px) {
     .diploma__item {
-        font-size: 16px;
-        line-height: 26px;
-        margin-bottom: 5px;
+        font-size: 9px;
+        line-height: 23px;
+        margin-bottom: 1px;
+        font-weight: 800;
+    }
+    .diploma__line {
+        width: 7px;
+        height: 7px;
+        margin-top: 9px;
+        border-radius: 50%;
+        background: #FE0000;
+    }
+    .diploma__title {
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 20px;
+        text-align: center;
+        margin-bottom: 8px;
     }
 }
 

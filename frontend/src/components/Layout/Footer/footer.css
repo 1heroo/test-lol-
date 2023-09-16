@@ -16,7 +16,7 @@
     font-family: 'Arial', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 28px;
     color: #fff;
 }
@@ -24,7 +24,7 @@
 .footer__list{
     display: flex;
     flex-direction: column;
-    row-gap: 30px;
+    row-gap: 20px;
 }
 
 .footer__number{
@@ -44,8 +44,10 @@
 
 .footer__content{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 60px;
 }
 
 .footer__span{
@@ -75,60 +77,58 @@
     color: #FFFFFF;
 }
 
-@media (max-width: 1200px) {
-
-}
-
-@media (max-width: 992px) {
-    .footer__title {
-        font-size: 35px;
-        line-height: 45px;
-    }
-    .footer__text {
-        font-size: 15px;
-        line-height: 24px;
-    }
-    .footer__num {
-        font-size: 17px;
-        line-height: 19px;
+@media (max-width: 1440px) {
+    .number{
+        margin-left: 40px;
     }
 }
 
-@media (max-width: 834px) {
-    .footer__title {
-        font-size: 28px;
-        line-height: 38px;
-    }
-    .footer__text {
-        font-size: 12px;
-        line-height: 20px;
-    }
-    .footer__num {
-        font-size: 15px;
-        line-height: 16px;
-    }
-    .footer__list {
-        row-gap: 25px;
+@media (max-width: 1024px) {
+    .number{
+        margin-left: 40px;
     }
 }
 
-@media (max-width: 708px) {
+@media (max-width: 768px) {
+    .number{
+        margin-left: 40px;
+    }
+}
+
+@media (max-width: 540px) {
+    .footer__icon {
+        margin-top: 25px;
+        display: flex;
+        align-items: flex-start;
+        column-gap: 13px;
+        justify-content: flex-start;
+    }
     .footer__content {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        gap: 60px;
         flex-direction: column;
-        row-gap: 12px;
-        margin-left: 18px;
-        align-items: start;
     }
-    .footer__title {
-        font-size: 25px;
+    .number{
+        margin-left: 40px;
     }
-
 }
 
 @media (max-width: 360px) {
     .footer__icon {
+        margin: 80px 5px 0;
         display: flex;
-        align-items: center;
+        align-items: flex-start;
+        column-gap: 13px;
         justify-content: flex-start;
+    }
+    .footer__title {
+        font-weight: 900;
+        font-size: 34px;
+        line-height: 46px;
+    }
+    .footer__list {
+        row-gap: 16px;
     }
 }

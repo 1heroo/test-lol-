@@ -1,8 +1,8 @@
 import React from 'react';
 
-import cart from '../../../images/cart.png'
-import cart2 from '../../../images/cart2.png'
-import cart3 from '../../../images/cart3.png'
+import cart from '../../../images/cart.svg'
+import cart2 from '../../../images/cart2.svg'
+import cart3 from '../../../images/cart3.svg'
 
 import './official.css'
 

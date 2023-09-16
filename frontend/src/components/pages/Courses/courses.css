@@ -1,5 +1,5 @@
 .courses{
-    background: url("../../images/berlin.jpg") 60% 100%/cover no-repeat;
+    background: url("../../images/berlin.jpg") 70% 80%/cover no-repeat;
 }
 
 .courses__content {
@@ -13,14 +13,20 @@
 }
 
 .courses__icons{
-    margin: 86px 0 350px;
+    background: #ffffff99;
+    border-radius: 12px;
+    padding: 20px 10px 20px 20px;
+    width: 335px;
+    margin: -20px 0 350px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 25px;
+    border: 3px solid #FE0000;
 }
 
 .courses__icon{
-    color: #1E005A;
+    color: #FE0000;
+    font-weight: bold;
     font-size: 27px;
     cursor: pointer;
 }
@@ -29,8 +35,8 @@
     font-family: 'Arial', sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 40px;
-    line-height: 32px;
+    font-size: 58px;
+    line-height: 65px;
     color: #1E005A;
 }
 
@@ -38,10 +44,16 @@
     font-family: 'Garamond', sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 32px;
+    font-size: 43px;
     line-height: 40px;
     margin: 37px 0 48px;
     color: #1E005A;
+}
+
+.courses__number{
+    font-weight: bold;
+    color: #FE0000;
+    font-size: 27px;
 }
 
 .courses__btn{
@@ -68,38 +80,75 @@
 
 }
 
+@media (max-width: 1185px) {
+    .courses__icons {
+        padding: 20px 10px 20px 20px;
+        width: 415px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .courses__icons {
+        padding: 20px 10px 20px 20px;
+        width: 503px;
+    }
+}
+
 @media (max-width: 992px) {
     .courses__icons {
-        margin: 70px 0 606px;
-        gap: 20px;
+        margin: 18px 0 80px;
+        gap: 28px;
     }
     .courses__icon {
         font-size: 33px;
     }
-}
-
-@media (max-width: 720px) {
     .courses__content {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
         flex-direction: column;
     }
     .courses__left {
-        margin: 158px 0 65px;
+        margin: 150px 0 0;
     }
+}
+
+@media (max-width: 720px) {
     .courses__icons {
-        margin: 31px 0 65px;
-        gap: 20px;
+        padding: 15px 10px 15px 15px;
+        width: 432px;
+    }
+}
+
+@media (max-width: 650px) {
+    .courses__left {
+        margin: 3px 0 0;
+    }
+    .courses__title {
+        font-weight: 800;
+        font-size: 46px;
+        line-height: 53px;
+    }
+    .courses__text {
+        font-weight: 900;
+        font-size: 37px;
+        line-height: 38px;
+        margin: 3px 0 10px;
+    }
+    .courses {
+        background: url("../../images/berlin.jpg") 55% 100%/cover no-repeat;
     }
 }
 
 @media (max-width: 496px) {
     .courses__title {
-        font-size: 34px;
-        line-height: 31px;
+        font-size: 36px;
+        line-height: 40px;
     }
     .courses__text {
-        font-size: 28px;
-        line-height: 40px;
-        margin: 22px 0 23px;
+        font-size: 31px;
+        line-height: 42px;
+        margin: 9px 0 9px;
     }
     .courses__btn {
         font-size: 21px;
@@ -107,30 +156,31 @@
         width: 260px;
         height: 53px;
     }
-    .main__icons {
-        margin: 12px 0 28px;
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-        text-align: start;
+    .courses__icons {
+        padding: 15px 10px 15px 15px;
+        width: 362px;
     }
 }
 
 @media (max-width: 390px) {
-    .courses__title {
-        font-size: 28px;
-        line-height: 31px;
-    }
     .courses__text {
         font-size: 26px;
         line-height: 35px;
         margin: 22px 0 17px;
     }
-    .courses__left {
-        margin: 29px 0 65px;
+    .courses__icon {
+        font-size: 25px;
     }
-}
-
-@media (max-width: 992px) {
-
+    .courses__number {
+        font-weight: bold;
+        font-size: 24px;
+    }
+    .courses__icons {
+        padding: 15px 10px 15px 15px;
+        width: 281px;
+    }
+    .courses__title {
+        font-size: 35px;
+        line-height: 45px;
+    }
 }

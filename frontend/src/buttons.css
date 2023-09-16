@@ -27,12 +27,12 @@ button {
     height: 80px;
     border-radius: 50%;
     border: 0;
-    color: #313133;
-    background: #4FD1C5;
-    background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 100%);
+    color: #ffffff;
+    background: #FF3000;
+    /*background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 100%);*/
     transition: all 0.3s ease-in-out 0s;
     font-size: 35px;
-    box-shadow: 1px 0 28px rgba(84,216,201,4.64);
+    /*box-shadow: 1px 0 28px rgba(84,216,201,4.64);*/
 }
 
 .fab > button::before {
@@ -40,8 +40,8 @@ button {
     border-radius: 1000px;
     min-width: calc(112px + -35px);
     min-height: calc(60px + 12px);
-    border: 6px solid #00FFCB;
-    box-shadow: 0 0 60px rgba(0,255,203,.64);
+    border: 6px solid #FF3000;
+    /*box-shadow: 0 0 60px rgba(0,255,203,.64);*/
     position: absolute;
     top: 50%;
     left: 50%;
@@ -61,9 +61,10 @@ button {
 
 .fab > button::after {
     content: '';
-    width: 30px; height: 30px;
+    width: 30px;
+    height: 30px;
     border-radius: 100%;
-    border: 6px solid #00FFCB;
+    border: 6px solid #FF3000;
     position: absolute;
     z-index: -1;
     top: 50%;
@@ -79,8 +80,8 @@ button {
         opacity: 1;
     }
     100% {
-        width: 150px;
-        height: 150px;
+        width: 110px;
+        height: 110px;
         opacity: 0;
     }
 }
@@ -168,3 +169,4 @@ button {
     }
 
 }
+

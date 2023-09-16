@@ -74,15 +74,6 @@
     font-size: 30px;
 }
 
-
-.course__h3{
-    position: absolute;
-    top: 30px;
-    left: 35px;
-    color: #ffffff;
-    font-size: 25px;
-}
-
 .course__card{
     margin: 56px 0 44px;
     position: relative;
@@ -94,6 +85,43 @@
     display: flex;
     align-items: center;
     column-gap: 22px;
+}
+
+@media (max-width: 992px) {
+    .course__map-btn {
+        bottom: 20px;
+        left: 50px;
+        color: white;
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 825px) {
+    .course__map-btn {
+        bottom: 12px;
+        left: 61px;
+        color: white;
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 759px) {
+    .course__map-btn{
+        row-gap: 10px;
+        bottom: 20px;
+        left: 80px;
+        color: white;
+        font-size: 33px;
+    }
+}
+
+@media (max-width: 768px) {
+    .course__map-btn {
+        bottom: 12px;
+        left: 54px;
+        color: white;
+        font-size: 22px;
+    }
 }
 
 @media (max-width: 742px) {
@@ -111,6 +139,7 @@
 
 }
 
+
 @media (max-width: 500px) {
     .course__map {
         text-align: center;
@@ -119,4 +148,89 @@
         left: 25px;
     }
 
+}
+
+@media (max-width: 703px) {
+    .course__map-btn {
+        row-gap: 10px;
+        bottom: 20px;
+        left: 66px;
+        color: white;
+        font-size: 33px;
+    }
+}
+
+@media (max-width: 625px) {
+    .course__map-btn {
+        row-gap: 10px;
+        bottom: 64px;
+        left: 135px;
+        color: white;
+        font-size: 55px;
+    }
+}
+
+@media (max-width: 625px) {
+    .course__map-btn {
+        row-gap: 10px;
+        bottom: 47px;
+        left: 85px;
+        color: white;
+        font-size: 55px;
+    }
+}
+
+@media (max-width: 462px) {
+    .course__map-btn {
+        row-gap: 10px;
+        bottom: 26px;
+        left: 76px;
+        color: white;
+        font-size: 46px;
+    }
+}
+
+@media (max-width: 462px) {
+    .course__map-btn {
+        row-gap: 10px;
+        bottom: 26px;
+        left: 58px;
+        color: white;
+        font-size: 46px;
+    }
+}
+
+@media (max-width: 400px) {
+    .course__map-btn {
+        row-gap: 10px;
+        bottom: 26px;
+        left: 64px;
+        color: white;
+        font-size: 40px;
+    }
+    .course__btn {
+        width: 257px;
+        height: 47px;
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 366px) {
+    .course__map-btn {
+        row-gap: 10px;
+        bottom: 16px;
+        left: 46px;
+        color: white;
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 320px) {
+    .course__map-btn {
+        row-gap: 10px;
+        bottom: 12px;
+        left: 55px;
+        color: white;
+        font-size: 28px;
+    }
 }

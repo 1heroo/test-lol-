@@ -29,20 +29,22 @@ const Company = () => {
                             <h1 className="company__title">Мы компания, которая <br/> открывает дверь в Европу</h1>
                             <button onClick={() => setOpen(true)} className="company__btn">Консультация</button>
                         </div>
-                        <ul className="main__icons" >
-                            <li className="main__icon"><a className="main__icon" href="https://www.instagram.com/reisekg/"><FaInstagram/></a></li>
-                            <li className="main__icon"><a className="main__icon" href="https://www.facebook.com/profile.php?id=100073306719661"><FaFacebook/></a></li>
-                            <li className="main__icon"><a className="main__icon" href="https://go.2gis.com/h8bdv">ул.Ахунбаева 110а <RiRoadMapFill className="main__icon"/></a></li>
-                            <ul>
-                                <li className="main__number"><a href="tel:+996 779 975 311" className="main__number">+996 (779) 975-311</a></li>
-                                <li className="main__number"><a href="tel:+996 559 975 311" className="main__number">+996 (559) 975-311</a></li>
-                                <li className="main__number"><a href="https://wa.me/+996709975311" className="main__number">+996 (709) 975-311 <ImWhatsapp/></a></li>
+                        <ul className="company__icons" >
+                            <ul style={{display: 'flex', alignItems: 'center', columnGap: '9px'}}>
+                                <li className="company__icon"><a className="company__icon" href="https://www.instagram.com/reisekg/"><FaInstagram/></a></li>
+                                <li className="company__icon"><a className="company__icon" href="https://www.facebook.com/profile.php?id=100073306719661"><FaFacebook/></a></li>
                             </ul>
-                            <li className="main__icon"><a className="main__icon" href="https://go.2gis.com/h4ac6">ул.Керимбекова, 26 <RiRoadMapFill className="main__icon"/></a></li>
                             <ul>
-                                <li className="main__number"><a href="tel:+996 999 975 311" className="main__number">+996 (999) 975-311</a></li>
-                                <li className="main__number"><a href="tel:+996 222 975 311" className="main__number">+996 (222) 975-311</a></li>
-                                <li className="main__number"><a href="https://wa.me/+996509975311" className="main__number">+996 (509) 975-311 <ImWhatsapp/></a></li>
+                                <li className="company__icon" style={{display: 'flex', alignItems: 'center', columnGap: '9px'}}><RiRoadMapFill className="company__icon"/><a className="company__icon" href="https://go.2gis.com/gbqggj">ул.Ахунбаева 110а </a></li>
+                                <li className="company__number" style={{paddingLeft: '33px'}}><a href="tel:+996 779 975 311" className="company__number">+996 (779) 975-311</a></li>
+                                <li className="company__number" style={{paddingLeft: '33px'}}><a href="tel:+996 559 975 311" className="company__number">+996 (559) 975-311</a></li>
+                                <li className="company__number" style={{display: 'flex', alignItems: 'center', columnGap: '9px'}}><ImWhatsapp/><a href="https://wa.me/+996709975311" className="company__number">+996 (709) 975-311 </a></li>
+                            </ul>
+                            <ul>
+                                <li className="company__icon" style={{display: 'flex', alignItems: 'center', columnGap: '9px'}}><RiRoadMapFill className="company__icon"/><a className="company__icon" href="https://go.2gis.com/h4ac6">ул.Керимбекова 26 </a></li>
+                                <li className="company__number" style={{paddingLeft: '33px'}}><a href="tel:+996 999 975 311" className="company__number">+996 (999) 975-311</a></li>
+                                <li className="company__number" style={{paddingLeft: '33px'}}><a href="tel:+996 222 975 311" className="company__number">+996 (222) 975-311</a></li>
+                                <li className="company__number" style={{display: 'flex', alignItems: 'center', columnGap: '9px'}}><ImWhatsapp/><a href="https://wa.me/+996509975311" className="company__number">+996 (509) 975-311 </a></li>
                             </ul>
                         </ul>
                     </div>

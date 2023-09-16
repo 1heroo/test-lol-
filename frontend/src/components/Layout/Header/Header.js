@@ -32,7 +32,7 @@ const Header = () => {
                         <NavLink to='/courses' className="header__link">Курсы</NavLink>
                         <li className="header__link">
                             {
-                                user?.username?.length
+                                user.login.length
                                     ? <NavLink to='/admin' className="header__link">Администрация</NavLink>
                                     : <NavLink to='/login' className="header__link">Войти</NavLink>
                             }

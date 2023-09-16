@@ -16,8 +16,8 @@
     font-family: 'Arial', sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 40px;
-    line-height: 48px;
+    font-size: 63px;
+    line-height: 60px;
     color: #1E005A;
     margin-bottom: 32px;
 }
@@ -43,51 +43,101 @@
 }
 
 .company__icons{
-    margin: 86px 0 350px;
+    background: #ffffff99;
+    border-radius: 12px;
+    padding: 20px 10px 20px 20px;
+    width: 350px;
+    margin: -20px 0 350px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 25px;
+    border: 3px solid #FE0000;
 }
 
 .company__icon{
-    color: #1E005A;
+    color: #FE0000;
+    font-weight: bold;
     font-size: 27px;
     cursor: pointer;
+    /*text-shadow: 1px 1px 2px azure, 0 0 1px aliceblue, 0 0 9px #1E005A;*/
+}
+.company__number{
+    font-weight: bold;
+    color: #FE0000;
+    font-size: 27px;
+}
+
+@media (max-width: 1048px) {
+    .company__icons {
+        width: 408px;
+        margin: -20px 0 350px;
+        gap: 25px;
+    }
+}
+
+@media (max-width: 992px) {
+    .company__content{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .company__left {
+        margin: 139px 0 46px;
+    }
+    .company__icons {
+        padding: 20px 19px 20px 20px;
+        width: 350px;
+        margin: 0 0 131px;
+    }
+    .company__title {
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 60px;
+    }
 }
 
 
 @media (max-width: 736px) {
     .company__title {
-        font-size: 31px;
-        line-height: 39px;
-        margin-bottom: 18px;
-    }
-    .company__btn {
-        width: 272px;
-        height: 55px;
-    }
-    .company__left{
-        margin: 199px 0 353px;
+        font-weight: 700;
+        font-size: 51px;
+        line-height: 52px;
     }
 }
 
-@media (max-width: 551px) {
-    .company__content{
-        flex-direction: column;
-    }
+@media (max-width: 460px) {
     .company__left {
-        margin: 153px 0 51px;
+        margin: 36px 0 18px;
+    }
+    .company__title {
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 44px;
     }
     .company__icons {
-        margin: 50px 0 115px;
-        gap: 21px;
+        padding: 10px 5px 10px 10px;
+        width: 317px;
+        margin: 0 0 131px;
+    }
+    .company__btn {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 32px;
+        width: 226px;
+        height: 44px;
     }
 }
 
-@media (max-width: 439px) {
-    .company__title {
-        font-size: 23px;
-        line-height: 32px;
-        margin-bottom: 12px;
+@media (max-width: 330px) {
+    .company__icon {
+        font-size: 24px;
+    }
+    .company__number {
+        font-size: 24px;
+    }
+    .company__icons {
+        padding: 10px 5px 10px 10px;
+        width: 290px;
+        margin: 0 0 42px;
     }
 }
