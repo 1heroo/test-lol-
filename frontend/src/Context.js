@@ -12,7 +12,7 @@ export const Context = (props) => {
     const [openJob, setOpenJob] = useState(false);
     const [tab, setTab] = useState(1);
     const [order, setOrder] = useState(false);
-    const [historyQuery, setHistoryQuery] = useState([])
+    const [historyQuery, setHistoryQuery] = useState([]);
     const toggleTab = (index) => {
         setTab(index)
     };
@@ -33,7 +33,7 @@ export const Context = (props) => {
 
     const registerUser = (data) => {
 //        axios.post('http://0.0.0.0:8000/post/registrations/', {...data, orders: []})
-        axios.post('http://reise.kg/api/post/registrations/', data)
+        axios.post('http://api.reise.kg/registration/', data)
             .then((res) => {
                 localStorage.setItem('user', JSON.stringify(res.data));
                 setUser(data);
@@ -43,10 +43,10 @@ export const Context = (props) => {
 
     const loginAdmin = (data) => {
     console.log(data)
-        axios.post('https://reise.kg/api/post/login/', data)
+        axios.post('https://api.reise.kg/login/', data)
             .then((res) => {
             console.log(res)
-                axios.get("https://reise.kg/api/post/profile/", {
+                axios.get("https://api.reise.kg/profile/", {
         headers:{
         "Authorization" : `Bearer ${res.data.access}`}
         }).then(resolve => {
@@ -69,13 +69,13 @@ export const Context = (props) => {
 
     };
     const getHistoryQuery = () => {
-        axios.get("https://reise.kg/api/post/questions/", {
+        axios.get("https://api.reise.kg/questions/", {
         headers:{
         "Authorization" : `Bearer ${user.access}`}
         }).then(res => {
             setHistoryQuery(res.data)
         })
-    }
+    };
 
     const value = {
         user,
