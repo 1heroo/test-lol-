@@ -32,7 +32,7 @@ const Overlay = ({overlayActive, setOverlayActive}) => {
             user: user,
             date
         })
-        await axios.post('https://api.reise.kg/registration/', {
+        await axios.post('https://api.reise.kg/api/post/registrations/', {
             ...data,
             user: user,
             date

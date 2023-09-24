@@ -40,7 +40,7 @@ const Admin = () => {
 
     const changeUser = (data) => {
 //        axios.patch(`http://0.0.0.0:8000/users/${user.id}`, data)
-        axios.put("https://api.reise.kg/profile/", data,{
+        axios.put("https://api.reise.kg/api/post/profile/", data,{
         headers:{
         "Authorization" : `Bearer ${user.access}`}
         })
@@ -54,7 +54,7 @@ const Admin = () => {
     const changePassword = (data) => {
     console.log(data, "-----")
 //        axios.patch(`http://0.0.0.0:8000/users/${user.id}`, {password: data.password})
-        axios.post("https://api.reise.kg/change-password", data,{
+        axios.post("https://api.reise.kg/api/post/change-password", data,{
         headers:{
         "Authorization" : `Bearer ${user.access}`}
         })
@@ -64,7 +64,7 @@ const Admin = () => {
     };
     const deleteQuestion = (id) => {
     console.log(id)
-    axios.delete(`https://api.reise.kg/registration/${id}/`,{
+    axios.delete(`https://api.reise.kg/api/post/registrations/${id}/`,{
         headers:{
         "Authorization" : `Bearer ${user.access}`}
         }).then(res => {

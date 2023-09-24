@@ -33,7 +33,7 @@ export const Context = (props) => {
 
     const registerUser = (data) => {
 //        axios.post('http://0.0.0.0:8000/post/registrations/', {...data, orders: []})
-        axios.post('http://api.reise.kg/registration/', data)
+        axios.post('http://api.reise.kg/api/post/registrations/', data)
             .then((res) => {
                 localStorage.setItem('user', JSON.stringify(res.data));
                 setUser(data);
@@ -42,11 +42,11 @@ export const Context = (props) => {
     };
 
     const loginAdmin = (data) => {
-    console.log(data)
-        axios.post('https://api.reise.kg/login/', data)
+    console.log(data);
+        axios.post('https://api.reise.kg/api/post/login/', data)
             .then((res) => {
-            console.log(res)
-                axios.get("https://api.reise.kg/profile/", {
+            console.log(res);
+                axios.get("https://api.reise.kg/api/post/profile/", {
         headers:{
         "Authorization" : `Bearer ${res.data.access}`}
         }).then(resolve => {
@@ -69,7 +69,7 @@ export const Context = (props) => {
 
     };
     const getHistoryQuery = () => {
-        axios.get("https://api.reise.kg/questions/", {
+        axios.get("https://api.reise.kg/api/post/questions/", {
         headers:{
         "Authorization" : `Bearer ${user.access}`}
         }).then(res => {
