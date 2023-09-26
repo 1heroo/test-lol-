@@ -52,18 +52,18 @@ const Admin = () => {
     };
 
     const changePassword = (data) => {
-    console.log(data, "-----")
+    console.log(data, "-----");
 //        axios.patch(`http://0.0.0.0:8000/users/${user.id}`, {password: data.password})
         axios.post("https://api.reise.kg/api/post/change-password", data,{
         headers:{
         "Authorization" : `Bearer ${user.access}`}
         })
             .then((res) => {
-            console.log(res)
+            console.log(res);
             setPasswordChange(false)})
     };
     const deleteQuestion = (id) => {
-    console.log(id)
+    console.log(id);
     axios.delete(`https://api.reise.kg/api/post/registrations/${id}/`,{
         headers:{
         "Authorization" : `Bearer ${user.access}`}

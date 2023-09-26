@@ -17,7 +17,7 @@ const Footer = () => {
                 <div className="footer__content">
                     <ul className="footer__list" >
                         <h2 className="footer__title">Филиал №1</h2>
-                        <li className="footer__text">г. Бишкек, ул. Ахунбаева 110а <br/> (пересекает ул. Токоналиева)</li>
+                        <li className="footer__text">г. Бишкек, ул. Ахунбаева 110а <br/> (пересекает ул. Токтоналиева)</li>
                         <li className="footer__number"><a className="footer__num" href=" https://wa.me/+996709975311">0709 975-311</a><a href="https://wa.me/+996709975311"><ImWhatsapp className="footer__icons"/></a> </li>
                         <li className="footer__num"><a className="footer__num" href="tel:+996 779 975-311">0779 975-311</a></li>
                         <li className="footer__num"><a className="footer__num" href="tel:+996 559 975-311">0559 975-311</a></li>

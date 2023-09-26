@@ -189,17 +189,17 @@
     }
     .overlay__input {
         border-radius: 7px;
-        width: 326px;
-        height: 41px;
-        font-size: 19px;
-        padding-left: 22px;
+        width: 305px;
+        height: 32px;
+        font-size: 12px;
+        padding-left: 9px;
     }
     .overlay__input2 {
-        width: 326px;
-        height: 100px;
+        width: 305px;
+        height: 73px;
         border-radius: 7px;
-        font-size: 20px;
-        padding-left: 23px;
+        font-size: 15px;
+        padding-left: 11px;
     }
     .overlay__close {
         width: 25px;
@@ -211,11 +211,20 @@
     }
 }
 
+@media (max-width: 768px) {
+    .overlay__popup{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        border-radius: 0;
+    }
+}
+
 @media (max-width: 710px) {
     .overlay__btn {
-        width: 270px;
-        height: 53px;
-        font-size: 22px;
+        width: 219px;
+        height: 42px;
+        font-size: 17px;
         margin-top: 20px;
     }
     .overlay__title {
@@ -240,21 +249,16 @@
         display: flex;
         cursor: pointer;
     }
-    .overlay__popup{
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        border-radius: 0;
-    }
+
     .overlay__text {
-        font-size: 14px;
-        line-height: 27px;
-        margin-bottom: 7px;
+        font-size: 12px;
+        line-height: 25px;
+        margin-bottom: 2px;
     }
     .overlay__title {
-        font-size: 19px;
-        line-height: 33px;
-        margin: 14px 0 12px;
+        font-size: 16px;
+        line-height: 21px;
+        margin: 6px 0 4px;
     }
     .overlay__line {
         margin-right: 8px;
@@ -265,26 +269,26 @@
 @media (max-width: 405px) {
     .overlay__input {
         border-radius: 7px;
-        width: 287px;
-        height: 44px;
-        font-size: 19px;
-        padding-left: 22px;
+        width: 270px;
+        height: 35px;
+        font-size: 14px;
+        padding-left: 10px;
     }
     .overlay__input2 {
-        width: 287px;
-        height: 100px;
+        width: 270px;
+        height: 63px;
         border-radius: 7px;
-        font-size: 20px;
-        padding-left: 23px;
+        font-size: 15px;
+        padding-left: 10px;
     }
     .overlay__h3 {
         font-size: 15px;
         line-height: 24px;
     }
     .overlay__title {
-        font-size: 16px;
-        line-height: 33px;
-        margin: 14px 0 12px;
+        font-size: 13px;
+        line-height: 18px;
+        margin: 5px 0 6px;
     }
     .overlay__popup{
         width: 100%;

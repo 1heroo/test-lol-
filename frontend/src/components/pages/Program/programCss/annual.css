@@ -8,7 +8,6 @@
 
 .annual__content{
     display: flex;
-    align-items: center;
     justify-content: space-between;
 }
 
@@ -59,7 +58,6 @@
     font-weight: 900;
     font-size: 35px;
     line-height: 48px;
-    margin-left: 100px;
     color: #1E005A;
 }
 
@@ -77,7 +75,7 @@
     font-family: 'Arial', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 17px;
     line-height: 28px;
     color: #1E005A;
 }
@@ -144,7 +142,7 @@
     font-family: 'Arial', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 17px;
     line-height: 24px;
     color: #1E005A;
     display: flex;
@@ -156,20 +154,30 @@
 
 }
 
-@media (max-width: 1096px) {
+@media (max-width: 1024px) {
     .annual__img{
-        width: 100%;
+        width: 350px;
         height: 350px;
+    }
+    .annual__left-title {
+        font-size: 35px;
+        text-align: center;
     }
     .annual__content {
         flex-direction: column-reverse;
         margin-top: 92px;
     }
+    .annual__right {
+        filter: drop-shadow(0 0 0.5rem #1E005A);
+        text-align: center;
+    }
 }
 
-@media (max-width: 1088px) {
-    .annual__right{
-        text-align: center;
+@media (max-width: 992px) {
+    .annual__euro {
+        column-gap: 27px;
+        flex-direction: column;
+        gap: 5px;
     }
 }
 
@@ -178,25 +186,24 @@
         display: flex;
         column-gap: 51px;
     }
-    .annual__euro {
-        display: flex;
-        column-gap: 27px;
+    .annual__right {
+        filter: drop-shadow(0 0 0.5rem #1E005A);
+        text-align: start;
+    }
+}
+
+@media (max-width: 763px) {
+    .annual__info {
+        flex-direction: column;
     }
 }
 
 @media (max-width: 719px) {
-    .annual__img{
-        width: 100%;
-        height: 297px;
-    }
     .annual__line {
         width: 100%;
     }
     .annual__p {
-        font-size: 18px;
-    }
-    .program__p {
-        font-size: 18px;
+        font-size: 17px;
     }
     .annual__left-title {
         font-size: 29px;
@@ -212,20 +219,9 @@
     .annual__euro {
         column-gap: 20px;
     }
-    .annual__h4 {
-        font-size: 21px;
-    }
 }
 
-@media (max-width: 600px) {
-    .annual__info {
-        flex-direction: column;
-    }
-    .annual__euro {
-        flex-direction: column;
-    }
 
-}
 
 @media (max-width: 426px) {
     .annual__text {
@@ -237,12 +233,19 @@
         padding: 0 0 6px;
     }
     .annual__h4 {
-        font-size: 16px;
+        font-size: 17px;
     }
 }
 
 @media (max-width: 425px) {
-
+    .annual__img {
+        width: 263px;
+        height: 263px;
+    }
+    .annual__right {
+        filter: drop-shadow(0 0 0.5rem #1E005A);
+        text-align: center;
+    }
 }
 
 /* diploma*/
@@ -275,6 +278,9 @@
 
 .diploma__line{
     color: #FE0000;
+    margin-top: 4px;
+    width: 20px;
+    height: 20px;
 }
 
 .diploma__content{
@@ -301,17 +307,15 @@
 
 @media (max-width: 445px) {
     .diploma__item {
-        font-size: 9px;
+        font-size: 17px;
         line-height: 23px;
         margin-bottom: 1px;
-        font-weight: 800;
     }
     .diploma__line {
-        width: 7px;
-        height: 7px;
-        margin-top: 9px;
-        border-radius: 50%;
-        background: #FE0000;
+        color: #FE0000;
+        margin-top: 3px;
+        width: 15px;
+        height: 15px;
     }
     .diploma__title {
         font-weight: 700;
