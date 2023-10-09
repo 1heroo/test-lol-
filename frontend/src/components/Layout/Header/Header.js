@@ -2,9 +2,9 @@ import React, {useContext, useState} from 'react';
 import {CustomContext} from "../../../Context";
 import {NavLink, Link} from "react-router-dom";
 
-import './header.css'
+import './header.css';
 
-import logo from './logo.png'
+import logo from './logo.png';
 import Overlay from "../../pages/Overlay/Overlay";
 
 
@@ -32,7 +32,7 @@ const Header = () => {
                         <NavLink to='/courses' className="header__link">Курсы</NavLink>
                         <li className="header__link">
                             {
-                                user.login.length
+                                user.login
                                     ? <NavLink to='/admin' className="header__link">Администрация</NavLink>
                                     : <NavLink to='/login' className="header__link">Войти</NavLink>
                             }
