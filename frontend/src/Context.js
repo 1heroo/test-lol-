@@ -37,7 +37,7 @@ export const Context = (props) => {
             .then((res) => {
                 localStorage.setItem('user', JSON.stringify(res.data));
                 setUser(data);
-                navigate('/')
+                navigate('/admin')
             })
     };
 
@@ -52,7 +52,7 @@ export const Context = (props) => {
         }).then(resolve => {
                 localStorage.setItem('user', JSON.stringify({...res.data, ...resolve.data }));
                 setUser({...res.data, ...resolve.data });
-                navigate('/')
+                navigate('/admin')
         })
        })
     };
