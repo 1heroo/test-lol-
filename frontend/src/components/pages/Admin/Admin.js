@@ -34,7 +34,7 @@ const Admin = () => {
         mode: "onBlur"
     });
 
-    console.log(historyQuery);
+
     const password = useRef({});
     password.current = watch("password1", "");
 
@@ -52,18 +52,17 @@ const Admin = () => {
     };
 
     const changePassword = (data) => {
-    console.log(data, "-----");
+
 //        axios.patch(`http://0.0.0.0:8000/users/${user.id}`, {password: data.password})
         axios.post("https://api.reise.kg/api/post/change-password", data,{
         headers:{
         "Authorization" : `Bearer ${user.access}`}
         })
             .then((res) => {
-            console.log(res);
             setPasswordChange(false)})
     };
     const deleteQuestion = (id) => {
-    console.log(id);
+
     axios.delete(`https://api.reise.kg/api/post/registrations/${id}/`,{
         headers:{
         "Authorization" : `Bearer ${user.access}`}
@@ -71,7 +70,7 @@ const Admin = () => {
         setHistoryQuery(prev => prev.filter(it => it.slug !== id))
         alert("Удалено")
     })
-    }
+    };
 
     return (
         <section className="admin">
@@ -83,7 +82,7 @@ const Admin = () => {
                     <div className="admin__buttons">
                         <button className={tab === 3 ? "admin__btn" : "admin__btn_active"} onClick={() => setTab(3)}>Админ панель</button>
                         <button className={tab === 2 ? "admin__btn" : "admin__btn_active"} onClick={() => {
-                        setTab(2)
+                        setTab(2);
                         getHistoryQuery()
                         }}>История заявок</button>
                         <button className={tab === 1 ? "admin__btn" : "admin__btn_active"} onClick={() => setTab(1)}>Профиль</button>

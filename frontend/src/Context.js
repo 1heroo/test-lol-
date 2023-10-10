@@ -42,10 +42,8 @@ export const Context = (props) => {
     };
 
     const loginAdmin = (data) => {
-    console.log(data);
         axios.post('https://api.reise.kg/api/post/login/', data)
             .then((res) => {
-            console.log(res);
                 axios.get("https://api.reise.kg/api/post/profile/", {
         headers:{
         "Authorization" : `Bearer ${res.data.access}`}
