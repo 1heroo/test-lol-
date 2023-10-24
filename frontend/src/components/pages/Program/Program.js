@@ -48,7 +48,7 @@ const Program = () => {
                                 <div className="program__info" data-aos="fade-right">
                                     <span>
                                         <h4 className="program__h4">Условия:</h4>
-                                        <p className="program__p">- Зарплата от 12 евро в час; <br/> - Проживание 250-600 евро в месяц; <br/> - Питание зависит от работодателя.</p>
+                                        <p className="program__p">- Зарплата от 13 евро в час; <br/> - Проживание 250-600 евро в месяц; <br/> - Питание зависит от работодателя.</p>
                                     </span>
                                     <span>
                                         <h4 className="program__h4">Требования:</h4>

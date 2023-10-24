@@ -30,7 +30,7 @@ const Company = () => {
                             <button onClick={() => setOpen(true)} className="company__btn">Консультация</button>
                         </div>
                         <ul className="company__icons" >
-                            <ul style={{display: 'flex', alignItems: 'center', columnGap: '9px'}}>
+                            <ul style={{display: 'flex', justifyContent: 'center', alignItems: 'center', columnGap: '9px'}}>
                                 <li className="company__icon"><a className="company__icon" href="https://www.instagram.com/reisekg/"><FaInstagram/></a></li>
                                 <li className="company__icon"><a className="company__icon" href="https://www.facebook.com/profile.php?id=100073306719661"><FaFacebook/></a></li>
                             </ul>

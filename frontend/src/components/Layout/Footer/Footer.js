@@ -32,7 +32,7 @@ const Footer = () => {
                     <ul className="footer__list" >
                         <h2 className="footer__title">График работы</h2>
                         <li className="footer__text">с понедельника по пятницу <br/> с 10:00 до 18:30</li>
-                        <li className="footer__num">Суббота <br/> с 11:00 до 16:30</li>
+                        <li className="footer__num">Суббота <br/> с 10:00 до 13:00</li>
                         <li className="footer__num">Воскресенье <br/> <span className="footer__span">выходной</span></li>
                     </ul>
                 </div>

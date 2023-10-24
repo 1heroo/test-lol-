@@ -188,7 +188,7 @@
     }
 }
 
-@media (max-width: 1088px) {
+@media (max-width: 1290px) {
     .certificate__block {
         display: flex;
         justify-content: space-between;
@@ -215,15 +215,19 @@
     }
 }
 
+@media (max-width: 760px) {
+    .certificate__line {
+        width: 100%;
+        margin: 17px 0 24px;
+    }
+}
+
 @media (max-width: 719px) {
     .certificate__img{
         width: 350px;
         height: 350px;
     }
-    .certificate__line {
-        width: 100%;
-        margin: 17px 0 24px;
-    }
+
     .certificate__right{
         text-align: center;
     }
@@ -313,17 +317,32 @@
 
 @media (max-width: 577px) {
     .certificate__block-radius {
-        width: 100%;
-        height: 20%;
+        width: 525px;
+        height: 525px;
         border-radius: 50%;
+    }
+    .certificate__block-title {
+        font-size: 22px;
+        line-height: 30px;
+        margin: 51px 0 26px;
+    }
+}
+
+@media (max-width: 542px) {
+    .certificate__block-radius {
+        width: 497px;
+        height: 497px;
+        border-radius: 50%;
+        margin-left: -22px;
     }
 }
 
 @media (max-width: 498px) {
     .certificate__block-radius {
-        width: 100%;
-        height: 20%;
+        width: 426px;
+        height: 426px;
         border-radius: 50%;
+        margin-left: -22px;
     }
     .certificate__block-text {
         font-size: 18px;
@@ -332,9 +351,63 @@
     }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 400px) {
+    .certificate__block-radius {
+        width: 400px;
+        height: 400px;
+        border-radius: 50%;
+        margin-left: -23px;
+    }
+    .certificate__block-text {
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 10px;
+    }
+    .certificate__block-title {
+        font-size: 20px;
+        line-height: 23px;
+        margin: 46px 0 21px;
+    }
+}
+
+@media (max-width: 375px) {
     .certificate__img {
         height: 280px;
         width: 280px;
+    }
+    .certificate__block-radius {
+        width: 375px;
+        height: 375px;
+        border-radius: 50%;
+        margin-left: -23px;
+    }
+    .certificate__block-text {
+        font-size: 16px;
+        line-height: 19px;
+        margin-bottom: 8px;
+    }
+    .certificate__block-title {
+        font-size: 21px;
+        line-height: 30px;
+        margin: 35px 0 21px;
+    }
+}
+
+@media (max-width: 320px) {
+    .certificate__block-radius {
+        width: 320px;
+        height: 320px;
+        border-radius: 50%;
+        margin-left: -23px;
+    }
+    .certificate__block-text {
+        font-size: 14px;
+        line-height: 17px;
+        margin-bottom: 6px;
+    }
+    .certificate__block-title {
+        font-size: 18px;
+        line-height: 20px;
+        margin: 30px 0 19px;
     }
 }
