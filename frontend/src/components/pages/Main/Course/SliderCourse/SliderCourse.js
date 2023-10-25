@@ -5,10 +5,10 @@ import 'photoswipe/dist/photoswipe.css'
 import "swiper/css";
 
 import "./slider.css";
-import course1 from '../../../../images/course1.PNG'
-import course2 from '../../../../images/course2.PNG'
-import course3 from '../../../../images/course3.PNG'
-import course4 from '../../../../images/course4.PNG'
+import course1 from '../../../../images/course1.jpeg'
+import course2 from '../../../../images/course2.jpeg'
+import course3 from '../../../../images/course3.jpeg'
+import course4 from '../../../../images/course4.jpeg'
 
 import { Autoplay } from "swiper";
 
