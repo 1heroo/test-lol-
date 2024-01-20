@@ -6,7 +6,7 @@ function NotFound() {
     return (
         <section className="not">
             <h2 className="not__h2">404</h2>
-            <h1 className="not__h1">Похоже мы не можем вам найти нужную вам страницу</h1>
+            <h1 className="not__h1">Такая страница не существует!!!</h1>
         </section>
     );
 }
